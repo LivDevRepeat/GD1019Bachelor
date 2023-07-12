@@ -6,21 +6,21 @@
             "id": "870ebc11-77ab-41d6-9262-3b5f74943a7d",
             "actions": [
                 {
-                    "name": "LeftFlipper",
-                    "type": "Button",
+                    "name": " Flipper Raise Left",
+                    "type": "Value",
                     "id": "b24a7d12-4d45-4523-b230-123c19d78035",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
+                    "interactions": "Press",
+                    "initialStateCheck": true
                 },
                 {
-                    "name": "RightFlipper",
+                    "name": "Flipper Lower Left",
                     "type": "Button",
-                    "id": "8db234fc-01ed-4cc4-bdbc-74f5e243f7c1",
+                    "id": "7d565c08-b295-4307-a77b-b7be39556410",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": "",
+                    "interactions": "Press(behavior=1)",
                     "initialStateCheck": false
                 }
             ],
@@ -32,18 +32,18 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "LeftFlipper",
+                    "action": " Flipper Raise Left",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
-                    "id": "69bfeb37-8588-4b96-89bc-87c5ae65a511",
-                    "path": "<Keyboard>/w",
+                    "id": "f62c1118-c812-48c5-86ed-62c1ec5561dd",
+                    "path": "<Keyboard>/q",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "RightFlipper",
+                    "action": "Flipper Lower Left",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

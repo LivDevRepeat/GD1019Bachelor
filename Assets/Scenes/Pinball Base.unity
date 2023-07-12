@@ -1616,8 +1616,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1873828643}
   - {fileID: 1493275489}
+  - {fileID: 1873828643}
   m_Father: {fileID: 754632799}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2432,7 +2432,8 @@ MonoBehaviour:
   pressedPosition: 45
   hitStrength: 10000
   flipperDamper: 150
-  flipperAction: {fileID: -3575283315297459338, guid: e315f2b3c60d94e0a943b643ea244490, type: 3}
+  flipperRaiseAction: {fileID: -3575283315297459338, guid: e315f2b3c60d94e0a943b643ea244490, type: 3}
+  flipperLowerAction: {fileID: -6547022086097501735, guid: e315f2b3c60d94e0a943b643ea244490, type: 3}
 --- !u!43 &1540353987
 Mesh:
   m_ObjectHideFlags: 0

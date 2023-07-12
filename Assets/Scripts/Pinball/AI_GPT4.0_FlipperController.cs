@@ -1,10 +1,11 @@
-// Genrated By Chat GPT 4.0
+// Genrated By Chat GPT 4.0 // Highly Edited By Hand
 
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Serialization;
 
 public class FlipperController : MonoBehaviour
 {
@@ -12,8 +13,8 @@ public class FlipperController : MonoBehaviour
     public float pressedPosition = 45f;
     public float hitStrength = 10000f;
     public float flipperDamper = 150f;
-    public InputActionReference flipperAction;
-    
+    public InputActionReference flipperRaiseAction;
+    public InputActionReference flipperLowerAction;
 
     private JointSpring _spring;
 
@@ -25,7 +26,10 @@ public class FlipperController : MonoBehaviour
         hinge.useSpring = true;
         _spring = new JointSpring();
         hinge.spring = _spring;
-        _spring.targetPosition = 30;
+        
+        _spring.targetPosition = restPosition;
+        _spring.spring = hitStrength ;
+        _spring.damper = flipperDamper;
 
     }
 
@@ -33,20 +37,26 @@ public class FlipperController : MonoBehaviour
     
     void OnEnable()
     {
-        flipperAction.action.performed += SetSpringValue;
+        flipperRaiseAction.action.performed += SetSpringPressed;
+        flipperLowerAction.action.performed += SetSpringLowered;
     }
 
     void OnDisable()
     {
-        flipperAction.action.performed -= SetSpringValue;
+        flipperRaiseAction.action.performed -= SetSpringPressed;
+        flipperLowerAction.action.performed -= SetSpringLowered;
+
     }
     
-    void SetSpringValue(InputAction.CallbackContext input)
+    void SetSpringPressed(InputAction.CallbackContext input)
     {
-        _spring.spring = 1 ;
-        _spring.targetPosition = 30;
+        _spring.targetPosition = pressedPosition;
         hinge.spring = _spring;
-        Debug.Log(input.action.name);
-
+    }
+    
+    void SetSpringLowered(InputAction.CallbackContext input)
+    {
+        _spring.targetPosition = restPosition;
+        hinge.spring = _spring;
     }
 }
