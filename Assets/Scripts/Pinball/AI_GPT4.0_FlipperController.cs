@@ -1,4 +1,6 @@
 // Genrated By Chat GPT 4.0
+
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,23 +14,33 @@ public class FlipperController : MonoBehaviour
     public float flipperDamper = 150f;
     HingeJoint hinge;
 
+    private JointSpring spring;
+
     public InputAction flipperAction;
 
     void Awake()
     {
         hinge = GetComponent<HingeJoint>();
         hinge.useSpring = true;
+        
+    }
+
+    private void Start()
+    {
+        spring  = new JointSpring();
+        spring.targetPosition = pressedPosition;
     }
 
     void FixedUpdate()
     {
-        JointSpring spring = new JointSpring();
+ 
         spring.spring = hitStrength;
         spring.damper = flipperDamper;
 
         if (flipperAction.triggered)
         {
             spring.targetPosition = pressedPosition;
+
         }
         else
         {
