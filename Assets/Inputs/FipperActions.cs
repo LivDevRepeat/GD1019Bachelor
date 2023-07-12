@@ -37,9 +37,27 @@ public partial class @FipperActions: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": true
                 },
                 {
+                    ""name"": "" Flipper Raise Right"",
+                    ""type"": ""Value"",
+                    ""id"": ""2726665e-a1ae-40f7-bcfa-e9925f14b7b6"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": ""Press"",
+                    ""initialStateCheck"": true
+                },
+                {
                     ""name"": ""Flipper Lower Left"",
                     ""type"": ""Button"",
                     ""id"": ""7d565c08-b295-4307-a77b-b7be39556410"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": ""Press(behavior=1)"",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Flipper Lower Right"",
+                    ""type"": ""Button"",
+                    ""id"": ""3738a909-1c51-4af9-8a05-1daff5385273"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": ""Press(behavior=1)"",
@@ -68,6 +86,28 @@ public partial class @FipperActions: IInputActionCollection2, IDisposable
                     ""action"": ""Flipper Lower Left"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""e1ab9162-183a-4d78-abad-08a901af2986"",
+                    ""path"": ""<Keyboard>/w"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": "" Flipper Raise Right"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""20d8e0d8-731d-4965-bfc7-5f9c5691c693"",
+                    ""path"": ""<Keyboard>/w"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Flipper Lower Right"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -77,7 +117,9 @@ public partial class @FipperActions: IInputActionCollection2, IDisposable
         // Flipper
         m_Flipper = asset.FindActionMap("Flipper", throwIfNotFound: true);
         m_Flipper_FlipperRaiseLeft = m_Flipper.FindAction(" Flipper Raise Left", throwIfNotFound: true);
+        m_Flipper_FlipperRaiseRight = m_Flipper.FindAction(" Flipper Raise Right", throwIfNotFound: true);
         m_Flipper_FlipperLowerLeft = m_Flipper.FindAction("Flipper Lower Left", throwIfNotFound: true);
+        m_Flipper_FlipperLowerRight = m_Flipper.FindAction("Flipper Lower Right", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -140,13 +182,17 @@ public partial class @FipperActions: IInputActionCollection2, IDisposable
     private readonly InputActionMap m_Flipper;
     private List<IFlipperActions> m_FlipperActionsCallbackInterfaces = new List<IFlipperActions>();
     private readonly InputAction m_Flipper_FlipperRaiseLeft;
+    private readonly InputAction m_Flipper_FlipperRaiseRight;
     private readonly InputAction m_Flipper_FlipperLowerLeft;
+    private readonly InputAction m_Flipper_FlipperLowerRight;
     public struct FlipperActions
     {
         private @FipperActions m_Wrapper;
         public FlipperActions(@FipperActions wrapper) { m_Wrapper = wrapper; }
         public InputAction @FlipperRaiseLeft => m_Wrapper.m_Flipper_FlipperRaiseLeft;
+        public InputAction @FlipperRaiseRight => m_Wrapper.m_Flipper_FlipperRaiseRight;
         public InputAction @FlipperLowerLeft => m_Wrapper.m_Flipper_FlipperLowerLeft;
+        public InputAction @FlipperLowerRight => m_Wrapper.m_Flipper_FlipperLowerRight;
         public InputActionMap Get() { return m_Wrapper.m_Flipper; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -159,9 +205,15 @@ public partial class @FipperActions: IInputActionCollection2, IDisposable
             @FlipperRaiseLeft.started += instance.OnFlipperRaiseLeft;
             @FlipperRaiseLeft.performed += instance.OnFlipperRaiseLeft;
             @FlipperRaiseLeft.canceled += instance.OnFlipperRaiseLeft;
+            @FlipperRaiseRight.started += instance.OnFlipperRaiseRight;
+            @FlipperRaiseRight.performed += instance.OnFlipperRaiseRight;
+            @FlipperRaiseRight.canceled += instance.OnFlipperRaiseRight;
             @FlipperLowerLeft.started += instance.OnFlipperLowerLeft;
             @FlipperLowerLeft.performed += instance.OnFlipperLowerLeft;
             @FlipperLowerLeft.canceled += instance.OnFlipperLowerLeft;
+            @FlipperLowerRight.started += instance.OnFlipperLowerRight;
+            @FlipperLowerRight.performed += instance.OnFlipperLowerRight;
+            @FlipperLowerRight.canceled += instance.OnFlipperLowerRight;
         }
 
         private void UnregisterCallbacks(IFlipperActions instance)
@@ -169,9 +221,15 @@ public partial class @FipperActions: IInputActionCollection2, IDisposable
             @FlipperRaiseLeft.started -= instance.OnFlipperRaiseLeft;
             @FlipperRaiseLeft.performed -= instance.OnFlipperRaiseLeft;
             @FlipperRaiseLeft.canceled -= instance.OnFlipperRaiseLeft;
+            @FlipperRaiseRight.started -= instance.OnFlipperRaiseRight;
+            @FlipperRaiseRight.performed -= instance.OnFlipperRaiseRight;
+            @FlipperRaiseRight.canceled -= instance.OnFlipperRaiseRight;
             @FlipperLowerLeft.started -= instance.OnFlipperLowerLeft;
             @FlipperLowerLeft.performed -= instance.OnFlipperLowerLeft;
             @FlipperLowerLeft.canceled -= instance.OnFlipperLowerLeft;
+            @FlipperLowerRight.started -= instance.OnFlipperLowerRight;
+            @FlipperLowerRight.performed -= instance.OnFlipperLowerRight;
+            @FlipperLowerRight.canceled -= instance.OnFlipperLowerRight;
         }
 
         public void RemoveCallbacks(IFlipperActions instance)
@@ -192,6 +250,8 @@ public partial class @FipperActions: IInputActionCollection2, IDisposable
     public interface IFlipperActions
     {
         void OnFlipperRaiseLeft(InputAction.CallbackContext context);
+        void OnFlipperRaiseRight(InputAction.CallbackContext context);
         void OnFlipperLowerLeft(InputAction.CallbackContext context);
+        void OnFlipperLowerRight(InputAction.CallbackContext context);
     }
 }

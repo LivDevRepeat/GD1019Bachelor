@@ -15,9 +15,27 @@
                     "initialStateCheck": true
                 },
                 {
+                    "name": " Flipper Raise Right",
+                    "type": "Value",
+                    "id": "2726665e-a1ae-40f7-bcfa-e9925f14b7b6",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Press",
+                    "initialStateCheck": true
+                },
+                {
                     "name": "Flipper Lower Left",
                     "type": "Button",
                     "id": "7d565c08-b295-4307-a77b-b7be39556410",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Press(behavior=1)",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Flipper Lower Right",
+                    "type": "Button",
+                    "id": "3738a909-1c51-4af9-8a05-1daff5385273",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "Press(behavior=1)",
@@ -44,6 +62,28 @@
                     "processors": "",
                     "groups": "",
                     "action": "Flipper Lower Left",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e1ab9162-183a-4d78-abad-08a901af2986",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": " Flipper Raise Right",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "20d8e0d8-731d-4965-bfc7-5f9c5691c693",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Flipper Lower Right",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
