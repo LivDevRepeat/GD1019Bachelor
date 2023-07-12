@@ -16,48 +16,33 @@ public class FlipperController : MonoBehaviour
 
     private JointSpring spring;
 
-    public InputAction flipperAction;
+    public InputActionReference flipperAction;
 
     void Awake()
     {
         hinge = GetComponent<HingeJoint>();
         hinge.useSpring = true;
-        
-    }
-
-    private void Start()
-    {
-        spring  = new JointSpring();
-        spring.targetPosition = pressedPosition;
-    }
-
-    void FixedUpdate()
-    {
- 
-        spring.spring = hitStrength;
-        spring.damper = flipperDamper;
-
-        if (flipperAction.triggered)
-        {
-            spring.targetPosition = pressedPosition;
-
-        }
-        else
-        {
-            spring.targetPosition = restPosition;
-        }
-
+        spring = new JointSpring();
         hinge.spring = spring;
-        hinge.useLimits = true;
+
     }
+
+   public void SetSpringValue(InputAction.CallbackContext input)
+    {
+        spring.targetPosition = 30;
+        Debug.Log(input.action.name);
+
+    }
+
+
 
     void OnEnable()
     {
-        flipperAction.Enable();
+        flipperAction.action.performed += SetSpringValue;
     }
 
     void OnDisable()
     {
-        flipperAction.Disable();
+        flipperAction.action.performed -= SetSpringValue;
     }
 }
