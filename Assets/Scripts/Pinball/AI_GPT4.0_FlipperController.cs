@@ -1,5 +1,4 @@
-// Genrated By Chat GPT 4.0 
-
+// Genrated By Chat GPT 4.0
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
