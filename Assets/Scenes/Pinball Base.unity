@@ -2432,23 +2432,7 @@ MonoBehaviour:
   pressedPosition: 45
   hitStrength: 10000
   flipperDamper: 150
-  flipperAction:
-    m_Name: Flipper
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 8aa3a1a3-03f5-438d-ab69-cdc1be8aa004
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 4395e9d1-55d6-497c-bdd0-bdffb0646b57
-      m_Path: <Keyboard>/w
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Flipper
-      m_Flags: 0
-    m_Flags: 0
+  flipperAction: {fileID: -3575283315297459338, guid: e315f2b3c60d94e0a943b643ea244490, type: 3}
 --- !u!43 &1540353987
 Mesh:
   m_ObjectHideFlags: 0
@@ -4266,7 +4250,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2018868241}
-  - component: {fileID: 2018868243}
   - component: {fileID: 2018868244}
   m_Layer: 0
   m_Name: 'Player '
@@ -4290,19 +4273,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2018868243
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2018868240}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ea473aec51e014669996055172f2e710, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  test: {fileID: -3575283315297459338, guid: e315f2b3c60d94e0a943b643ea244490, type: 3}
 --- !u!114 &2018868244
 MonoBehaviour:
   m_ObjectHideFlags: 0

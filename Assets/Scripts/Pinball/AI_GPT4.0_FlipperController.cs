@@ -12,30 +12,25 @@ public class FlipperController : MonoBehaviour
     public float pressedPosition = 45f;
     public float hitStrength = 10000f;
     public float flipperDamper = 150f;
-    HingeJoint hinge;
-
-    private JointSpring spring;
-
     public InputActionReference flipperAction;
+    
+
+    private JointSpring _spring;
+
+    private HingeJoint hinge;
 
     void Awake()
     {
         hinge = GetComponent<HingeJoint>();
         hinge.useSpring = true;
-        spring = new JointSpring();
-        hinge.spring = spring;
+        _spring = new JointSpring();
+        hinge.spring = _spring;
+        _spring.targetPosition = 30;
 
     }
 
-   public void SetSpringValue(InputAction.CallbackContext input)
-    {
-        spring.targetPosition = 30;
-        Debug.Log(input.action.name);
-
-    }
-
-
-
+   
+    
     void OnEnable()
     {
         flipperAction.action.performed += SetSpringValue;
@@ -44,5 +39,14 @@ public class FlipperController : MonoBehaviour
     void OnDisable()
     {
         flipperAction.action.performed -= SetSpringValue;
+    }
+    
+    void SetSpringValue(InputAction.CallbackContext input)
+    {
+        _spring.spring = 1 ;
+        _spring.targetPosition = 30;
+        hinge.spring = _spring;
+        Debug.Log(input.action.name);
+
     }
 }
