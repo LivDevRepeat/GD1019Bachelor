@@ -1,1 +1,54 @@
-{}
+{
+    "name": "FipperActions",
+    "maps": [
+        {
+            "name": "Flipper",
+            "id": "870ebc11-77ab-41d6-9262-3b5f74943a7d",
+            "actions": [
+                {
+                    "name": "LeftFlipper",
+                    "type": "Button",
+                    "id": "b24a7d12-4d45-4523-b230-123c19d78035",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "RightFlipper",
+                    "type": "Button",
+                    "id": "8db234fc-01ed-4cc4-bdbc-74f5e243f7c1",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "615cfe51-1f0d-4bdf-bf92-852ad47108eb",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "LeftFlipper",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "69bfeb37-8588-4b96-89bc-87c5ae65a511",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RightFlipper",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
