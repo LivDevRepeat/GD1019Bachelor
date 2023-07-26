@@ -3,10 +3,10 @@ using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
 // Genrated By Chat GPT 4.0 
-public class SceneManager : MonoBehaviour
+public class SceneLoader : MonoBehaviour
 {
     // singleton instance
-    public static SceneManager Instance { get; private set; }
+    public static SceneLoader Instance { get; private set; }
 
     // prevent duplication of instance
     private void Awake()
@@ -28,7 +28,7 @@ public class SceneManager : MonoBehaviour
         if (context.performed)
         {
             string sceneName = context.ReadValue<string>();
-            SceneManager.LoadScene(sceneName);
+            SceneLoader.LoadScene(sceneName);
         }
     }
 
@@ -37,8 +37,8 @@ public class SceneManager : MonoBehaviour
     {
         if (context.performed)
         {
-            Scene currentScene = SceneManager.GetActiveScene();
-            SceneManager.LoadScene(currentScene.name);
+            Scene currentScene = SceneLoader.GetActiveScene();
+            SceneLoader.LoadScene(currentScene.name);
         }
     }
 
