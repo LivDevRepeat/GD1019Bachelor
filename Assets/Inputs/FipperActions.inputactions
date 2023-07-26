@@ -88,6 +88,34 @@
                     "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "Debug",
+            "id": "3be6d81c-e34c-4f71-b7b5-05b903aad7fc",
+            "actions": [
+                {
+                    "name": "Debug Load New Scene",
+                    "type": "Button",
+                    "id": "b0d58dba-37b7-4062-bd2d-09d3664f607d",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "482dd70d-be30-436a-a182-3d192775a242",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Debug Load New Scene",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": []

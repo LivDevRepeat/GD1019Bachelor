@@ -110,6 +110,34 @@ public partial class @FipperActions: IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": false
                 }
             ]
+        },
+        {
+            ""name"": ""Debug"",
+            ""id"": ""3be6d81c-e34c-4f71-b7b5-05b903aad7fc"",
+            ""actions"": [
+                {
+                    ""name"": ""Debug Load New Scene"",
+                    ""type"": ""Button"",
+                    ""id"": ""b0d58dba-37b7-4062-bd2d-09d3664f607d"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""482dd70d-be30-436a-a182-3d192775a242"",
+                    ""path"": ""<Keyboard>/e"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Debug Load New Scene"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
         }
     ],
     ""controlSchemes"": []
@@ -120,6 +148,9 @@ public partial class @FipperActions: IInputActionCollection2, IDisposable
         m_Flipper_FlipperRaiseRight = m_Flipper.FindAction(" Flipper Raise Right", throwIfNotFound: true);
         m_Flipper_FlipperLowerLeft = m_Flipper.FindAction("Flipper Lower Left", throwIfNotFound: true);
         m_Flipper_FlipperLowerRight = m_Flipper.FindAction("Flipper Lower Right", throwIfNotFound: true);
+        // Debug
+        m_Debug = asset.FindActionMap("Debug", throwIfNotFound: true);
+        m_Debug_DebugLoadNewScene = m_Debug.FindAction("Debug Load New Scene", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -247,11 +278,61 @@ public partial class @FipperActions: IInputActionCollection2, IDisposable
         }
     }
     public FlipperActions @Flipper => new FlipperActions(this);
+
+    // Debug
+    private readonly InputActionMap m_Debug;
+    private List<IDebugActions> m_DebugActionsCallbackInterfaces = new List<IDebugActions>();
+    private readonly InputAction m_Debug_DebugLoadNewScene;
+    public struct DebugActions
+    {
+        private @FipperActions m_Wrapper;
+        public DebugActions(@FipperActions wrapper) { m_Wrapper = wrapper; }
+        public InputAction @DebugLoadNewScene => m_Wrapper.m_Debug_DebugLoadNewScene;
+        public InputActionMap Get() { return m_Wrapper.m_Debug; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(DebugActions set) { return set.Get(); }
+        public void AddCallbacks(IDebugActions instance)
+        {
+            if (instance == null || m_Wrapper.m_DebugActionsCallbackInterfaces.Contains(instance)) return;
+            m_Wrapper.m_DebugActionsCallbackInterfaces.Add(instance);
+            @DebugLoadNewScene.started += instance.OnDebugLoadNewScene;
+            @DebugLoadNewScene.performed += instance.OnDebugLoadNewScene;
+            @DebugLoadNewScene.canceled += instance.OnDebugLoadNewScene;
+        }
+
+        private void UnregisterCallbacks(IDebugActions instance)
+        {
+            @DebugLoadNewScene.started -= instance.OnDebugLoadNewScene;
+            @DebugLoadNewScene.performed -= instance.OnDebugLoadNewScene;
+            @DebugLoadNewScene.canceled -= instance.OnDebugLoadNewScene;
+        }
+
+        public void RemoveCallbacks(IDebugActions instance)
+        {
+            if (m_Wrapper.m_DebugActionsCallbackInterfaces.Remove(instance))
+                UnregisterCallbacks(instance);
+        }
+
+        public void SetCallbacks(IDebugActions instance)
+        {
+            foreach (var item in m_Wrapper.m_DebugActionsCallbackInterfaces)
+                UnregisterCallbacks(item);
+            m_Wrapper.m_DebugActionsCallbackInterfaces.Clear();
+            AddCallbacks(instance);
+        }
+    }
+    public DebugActions @Debug => new DebugActions(this);
     public interface IFlipperActions
     {
         void OnFlipperRaiseLeft(InputAction.CallbackContext context);
         void OnFlipperRaiseRight(InputAction.CallbackContext context);
         void OnFlipperLowerLeft(InputAction.CallbackContext context);
         void OnFlipperLowerRight(InputAction.CallbackContext context);
+    }
+    public interface IDebugActions
+    {
+        void OnDebugLoadNewScene(InputAction.CallbackContext context);
     }
 }

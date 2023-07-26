@@ -1,14 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="a8bc823b-59ac-4f8d-b54c-40af130c2292" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GD1019Bachelor/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GD1019Bachelor/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FlipperController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FlipperController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SceneManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SceneManager.cs.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
+    <option name="SIGN_OFF_COMMIT" value="true" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Users/Lina_Privat/Projects/GD1019Bachelor/Assets/SceneManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/Lina_Privat/Projects/GD1019Bachelor/Assets/SceneManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/Lina_Privat/Projects/GD1019Bachelor/Assets/SceneManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Input Test.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Users/Lina_Privat/Projects/GD1019Bachelor/Assets/Scripts/Pinball/AI_GPT4.0_FlipperController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/Lina_Privat/Projects/GD1019Bachelor/Assets/Scripts/Pinball/AI_GPT4.0_FlipperController.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectId" id="2ST8S5YSBidgffDss4XR82u3p8X" />
@@ -21,6 +37,11 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "scene-manager",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -78,7 +99,26 @@
       <option name="presentableId" value="Default" />
       <updated>1689159314644</updated>
       <workItem from="1689159317144" duration="57000" />
+      <workItem from="1689159589389" duration="10588000" />
+      <workItem from="1690359041788" duration="4188000" />
     </task>
+    <task id="LOCAL-00001" summary="[Manual Fix]">
+      <option name="closed" value="true" />
+      <created>1690361388757</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1690361388757</updated>
+    </task>
+    <task id="LOCAL-00002" summary="[AI] [ChatGPT 4.0] Generate different Version that uses Callback context">
+      <option name="closed" value="true" />
+      <created>1690363315654</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1690363315654</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -87,7 +127,22 @@
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="Both" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="Add Game Object &amp; Empty Script" />
+    <MESSAGE value="[Manual Fix]" />
+    <MESSAGE value="[AI] [ChatGPT 4.0] Generate different Version that uses Callback context" />
+    <option name="LAST_COMMIT_MESSAGE" value="[AI] [ChatGPT 4.0] Generate different Version that uses Callback context" />
   </component>
 </project>
