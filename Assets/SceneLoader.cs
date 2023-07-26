@@ -23,12 +23,12 @@ public class SceneLoader : MonoBehaviour
     }
 
     // method to load scene
-    public void LoadScene(InputAction.CallbackContext context, string sceneName)
+    public void LoadScene(InputAction.CallbackContext context)
     {
         if (context.performed)
         {
-            //string sceneName = context.ReadValue<string>()
-            SceneManager.LoadScene(sceneName);
+            //string sceneName = context.ReadValue<string>();
+            SceneManager.LoadScene(1);
         }
     }
 
