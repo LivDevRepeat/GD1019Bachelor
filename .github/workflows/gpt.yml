@@ -18,5 +18,3 @@ jobs:
       with:
         name: my-artifact
         path: .
-    - name: Create Pull Request
-      uses: peter-evans/create-pull-request@v5
