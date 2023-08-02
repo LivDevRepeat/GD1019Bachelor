@@ -1,22 +1,21 @@
-name: Continuous Translation
+name: GPT Translate
 
 on:
-  workflow_dispatch:
+  issue_comment:
+    types: [ created ]
 
 jobs:
-  build:
+  gpt_translate:
     runs-on: ubuntu-latest
+
     steps:
-    - uses: actions/checkout@v3
-    - uses: yunwei37/OpenAI-Continuous-Translator@master
-      with:
-          git_repo_url: https://github.com/radi-cho/awesome-gpt4
-          api_key: ${{ secrets.OPENAI_API_KEY }}
-          file_types: "md"
-    - name: Upload artifact
-      uses: actions/upload-artifact@v2
-      with:
-        name: my-artifact
-        path: .
-    - name: Create Pull Request
-      uses: peter-evans/create-pull-request@v4
+      - uses: actions/checkout@v3
+
+      - name: Run GPT Translate
+        if: |
+          contains(github.event.comment.body, '/gpt-translate') || 
+          contains(github.event.comment.body, '/gt')
+        uses: 3ru/gpt-translate@v1.1
+        with:
+          apikey: ${{ secrets.OPENAI_API_KEY }}
+      
