@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a8bc823b-59ac-4f8d-b54c-40af130c2292" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GD1019Bachelor/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GD1019Bachelor/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Pinball Base.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Pinball Base.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +36,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "22-add-action-that-summarizes-git-commit-adds-comments-checks-spelling-1",
+    "git-widget-placeholder": "22-add-action-that-summarizes-git-commit-adds-comments-checks-spelling",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -102,6 +101,7 @@
       <workItem from="1689159589389" duration="10588000" />
       <workItem from="1690359041788" duration="4188000" />
       <workItem from="1691053740696" duration="743000" />
+      <workItem from="1691067533061" duration="2721000" />
     </task>
     <task id="LOCAL-00001" summary="[Manual Fix]">
       <option name="closed" value="true" />
