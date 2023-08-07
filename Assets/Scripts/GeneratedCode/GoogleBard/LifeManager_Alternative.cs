@@ -1,3 +1,11 @@
+#region Manual Fix
+
+using System; // added the missing dependencies
+
+#endregion
+
+#region Generated Code
+
 namespace GeneratedCode.GoogleBard
 {
     using UnityEngine;
@@ -42,3 +50,5 @@ namespace GeneratedCode.GoogleBard
         }
     }
 }
+
+#endregion
