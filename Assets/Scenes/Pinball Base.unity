@@ -794,7 +794,7 @@ GameObject:
   m_Component:
   - component: {fileID: 498878780}
   - component: {fileID: 498878781}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ' Flipper Anchor L'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1559,7 +1559,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 989814568}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Flipper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1979,7 +1979,7 @@ GameObject:
   - component: {fileID: 1493275496}
   - component: {fileID: 1493275495}
   - component: {fileID: 1493275497}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Flipper L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3277,7 +3277,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1785361746}
   - component: {fileID: 1785361747}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ' Flipper Anchor R'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3872,7 +3872,7 @@ GameObject:
   - component: {fileID: 1873828650}
   - component: {fileID: 1873828649}
   - component: {fileID: 1873828651}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Flipper R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5534,11 +5534,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8556264611872896767, guid: 4240bb631ccee4acb9e828110f2dbbb3, type: 3}
       propertyPath: exitTriggerEvent.m_PersistentCalls.m_Calls.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8556264611872896767, guid: 4240bb631ccee4acb9e828110f2dbbb3, type: 3}
       propertyPath: exitTriggerEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8556264611872896767, guid: 4240bb631ccee4acb9e828110f2dbbb3, type: 3}
+      propertyPath: exitTriggerEvent.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8556264611872896767, guid: 4240bb631ccee4acb9e828110f2dbbb3, type: 3}
       propertyPath: exitTriggerEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -5553,7 +5557,15 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 161482803}
     - target: {fileID: 8556264611872896767, guid: 4240bb631ccee4acb9e828110f2dbbb3, type: 3}
+      propertyPath: exitTriggerEvent.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 989814567}
+    - target: {fileID: 8556264611872896767, guid: 4240bb631ccee4acb9e828110f2dbbb3, type: 3}
       propertyPath: exitTriggerEvent.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8556264611872896767, guid: 4240bb631ccee4acb9e828110f2dbbb3, type: 3}
+      propertyPath: exitTriggerEvent.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8556264611872896767, guid: 4240bb631ccee4acb9e828110f2dbbb3, type: 3}
@@ -5565,12 +5577,28 @@ PrefabInstance:
       value: OnLifeDecrease
       objectReference: {fileID: 0}
     - target: {fileID: 8556264611872896767, guid: 4240bb631ccee4acb9e828110f2dbbb3, type: 3}
+      propertyPath: exitTriggerEvent.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 8556264611872896767, guid: 4240bb631ccee4acb9e828110f2dbbb3, type: 3}
       propertyPath: exitTriggerEvent.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
       value: GeneratedCode.GoogleBard.LifeManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 8556264611872896767, guid: 4240bb631ccee4acb9e828110f2dbbb3, type: 3}
+      propertyPath: exitTriggerEvent.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
+      value: UnityEngine.GameObject, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8556264611872896767, guid: 4240bb631ccee4acb9e828110f2dbbb3, type: 3}
       propertyPath: exitTriggerEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8556264611872896767, guid: 4240bb631ccee4acb9e828110f2dbbb3, type: 3}
+      propertyPath: exitTriggerEvent.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8977907071121141105, guid: 4240bb631ccee4acb9e828110f2dbbb3, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
