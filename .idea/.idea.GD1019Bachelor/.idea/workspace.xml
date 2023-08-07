@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a8bc823b-59ac-4f8d-b54c-40af130c2292" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GeneratedCode/GoogleBard/LifeManager_Alternative.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GeneratedCode/GoogleBard/LifeManager_Alternative.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GeneratedCode/ChatGPT_35/PinballGame.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GeneratedCode/ChatGPT_35/PinballGame.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GeneratedCode/ChatGPT_40/LifeManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GeneratedCode/ChatGPT_40/LifeManager.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GeneratedCode/GoogleBard/LifeManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GeneratedCode/GoogleBard/LifeManager.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GeneratedCode/GoogleBard/LifeManager_Alternative.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GeneratedCode/GoogleBard/LifeManager_Alternative.cs.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +101,7 @@
       <workItem from="1690359041788" duration="4188000" />
       <workItem from="1691053740696" duration="743000" />
       <workItem from="1691399939288" duration="4000" />
-      <workItem from="1691400411945" duration="806000" />
+      <workItem from="1691400411945" duration="1244000" />
     </task>
     <task id="LOCAL-00001" summary="[Manual Fix]">
       <option name="closed" value="true" />

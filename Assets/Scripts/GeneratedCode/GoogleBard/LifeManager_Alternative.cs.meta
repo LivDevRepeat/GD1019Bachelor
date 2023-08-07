@@ -1,3 +1,15 @@
 fileFormatVersion: 2
 guid: f739d6bcf6734b379aaed78fa1706b0b
-timeCreated: 1691156446
+labels:
+- Ai_Generated
+- Google
+- GoogleBard
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
