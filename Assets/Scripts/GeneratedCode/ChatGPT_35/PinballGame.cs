@@ -21,14 +21,14 @@ namespace GeneratedCode.ChatGPT_35
         }
 
         // Function to increase life variable by one
-        private void IncreaseLife()
+        public void IncreaseLife()
         {
             life++;
             Debug.Log("Life increased. Current life: " + life);
         }
 
         // Function to decrease life variable and check if it's zero, then call game over function
-        private void DecreaseLife()
+        public void DecreaseLife()
         {
             life--;
             Debug.Log("Life decreased. Current life: " + life);
@@ -41,7 +41,7 @@ namespace GeneratedCode.ChatGPT_35
         }
 
         // Function to handle game over
-        private void GameOver()
+        public void GameOver()
         {
             Debug.Log("Game Over");
             // You can add any additional game over logic here, like displaying a game over screen or restarting the level.

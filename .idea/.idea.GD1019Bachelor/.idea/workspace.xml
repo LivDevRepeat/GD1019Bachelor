@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8bc823b-59ac-4f8d-b54c-40af130c2292" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GeneratedCode/ChatGPT_35/PinballGame.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GeneratedCode/ChatGPT_35/PinballGame.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GeneratedCode/ChatGPT_40/LifeManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GeneratedCode/ChatGPT_40/LifeManager.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GeneratedCode/GoogleBard/LifeManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GeneratedCode/GoogleBard/LifeManager.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GeneratedCode/GoogleBard/LifeManager_Alternative.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GeneratedCode/GoogleBard/LifeManager_Alternative.cs.meta" afterDir="false" />
-    </list>
+    <list default="true" id="a8bc823b-59ac-4f8d-b54c-40af130c2292" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,7 +16,8 @@
     <option name="SIGN_OFF_COMMIT" value="true" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeneratedCode/NewBehaviourScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ExitTrigger.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Users/Lina_Privat/Projects/GD1019Bachelor/Assets/Scenes/Pinball Base.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Input Test.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
@@ -35,7 +31,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;32-add-generated-files-i-their-namespaces&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;34-prepare-workspace-level-for-lifemanafer-script-test&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -101,7 +97,9 @@
       <workItem from="1690359041788" duration="4188000" />
       <workItem from="1691053740696" duration="743000" />
       <workItem from="1691399939288" duration="4000" />
-      <workItem from="1691400411945" duration="1244000" />
+      <workItem from="1691400411945" duration="4283000" />
+      <workItem from="1691434579449" duration="575000" />
+      <workItem from="1691486396176" duration="1768000" />
     </task>
     <task id="LOCAL-00001" summary="[Manual Fix]">
       <option name="closed" value="true" />

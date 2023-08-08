@@ -26,13 +26,13 @@
                 onGameOver.AddListener(OnGameOver);
             }
 
-            private void OnLifeIncrease()
+            public void OnLifeIncrease()
             {
                 // Increase the life by one
                 life++;
             }
 
-            private void OnLifeDecrease()
+            public void OnLifeDecrease()
             {
                 // Decrease the life by one
                 life--;
@@ -44,7 +44,7 @@
                 }
             }
 
-            private void OnGameOver()
+            public void OnGameOver()
             {
                 // Display a game over message
                 Debug.Log("Game Over!");

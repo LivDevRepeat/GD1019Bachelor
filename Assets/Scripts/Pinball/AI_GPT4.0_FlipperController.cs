@@ -25,11 +25,13 @@ public class FlipperController : MonoBehaviour
         hinge = GetComponent<HingeJoint>();
         hinge.useSpring = true;
         _spring = new JointSpring();
-        hinge.spring = _spring;
+     
         
         _spring.targetPosition = restPosition;
         _spring.spring = hitStrength ;
         _spring.damper = flipperDamper;
+        
+        hinge.spring = _spring;
 
     }
 

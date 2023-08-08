@@ -9,11 +9,11 @@ using System; // added the missing dependencies
 namespace GeneratedCode.GoogleBard
 {
     using UnityEngine;
-    public class LifeManager_Alternative
+    public class LifeManager_Alternative // Is not a MonoBehaviour => unusable 
     {
         public int life = 3;
 
-        public event Action LifeIncreased;
+        public event Action LifeIncreased;  // Asked for a UnityEvent, but got an Action instead
         public event Action LifeDecreased;
         public event Action GameOver;
 
