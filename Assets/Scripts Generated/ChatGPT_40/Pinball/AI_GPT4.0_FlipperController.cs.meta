@@ -1,5 +1,7 @@
 fileFormatVersion: 2
 guid: d9ee27b4343974c348aea1e326cc20d4
+labels:
+- Chat_GPT_4.0
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2

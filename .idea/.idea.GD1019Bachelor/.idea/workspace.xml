@@ -5,19 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a8bc823b-59ac-4f8d-b54c-40af130c2292" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GD1019Bachelor/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GD1019Bachelor/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GeneratedCode/ChatGPT_40/LifeManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GeneratedCode/ChatGPT_40/LifeManager.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/KPL_Wispy-Woods_Land_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/KPL_Wispy-Woods_Land_1.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Pinball.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Pinball/AI_GPT4.0_FlipperController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Pinball/AI_GPT4.0_FlipperController.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Pinball/Background.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Pinball/Background/Broken RainbowColorChanger.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Pinball/Background/RainbowColorChanger.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Pinball/Background/RainbowColorChanger.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts Generated/ChatGPT_40/Pinball/AI_GPT4.0_FlipperController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts Generated/ChatGPT_40/Pinball/AI_GPT4.0_FlipperController.cs.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,9 +18,7 @@
     <option name="SIGN_OFF_COMMIT" value="true" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/ExitTrigger.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Users/Lina_Privat/Projects/GD1019Bachelor/Assets/Scenes/Pinball Base.unity" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Input Test.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts Generated/ChatGPT_40/Pinball/LifeManager.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectId" id="2ST8S5YSBidgffDss4XR82u3p8X" />
@@ -116,6 +102,7 @@
       <workItem from="1691486396176" duration="2799000" />
       <workItem from="1691503155436" duration="856000" />
       <workItem from="1691504952493" duration="61000" />
+      <workItem from="1691505077025" duration="771000" />
     </task>
     <task id="LOCAL-00001" summary="[Manual Fix]">
       <option name="closed" value="true" />
