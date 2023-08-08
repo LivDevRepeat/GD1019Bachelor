@@ -12,5 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55e44a4509af44d9ba740554aa3b302a, type: 3}
   m_Name: Lifemanager
   m_EditorClassIdentifier: 
-  someString: 
+  someString: "I\u2019m developing a Pinball Game based on Kirby Pinball (for GameBoy
+    Color). I use the unity Game Engine version 2022.3.4f1. I need you to generate
+    a Monobehavior C# script and if needed a tutorial for the necessary components
+    to add. I has the following requirements:  Life that can be edited in the editor. 
+    Unity Event life increase Unity event life decrease Unity ent game over  Function
+    that increases life variable by one Function that decreases life variable and
+    checks if its zero if it is it shall call  the game over function Function gameover   
+    All the functions need to subscribe to the respective unity events on awake "
   referencedScripts: []

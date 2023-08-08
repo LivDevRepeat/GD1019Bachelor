@@ -7,7 +7,7 @@ namespace Scripts_Generated.ChatGPT_40.Scriptabele_Object_Scripts
     public class StringAndScriptsReference : ScriptableObject
     {
         public string someString;
-        public List<MonoBehaviour> referencedScripts;
+        public List<TextAsset> referencedScripts;
     }
 
 }
