@@ -357,7 +357,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &112628555
 RectTransform:
   m_ObjectHideFlags: 0
@@ -920,6 +920,7 @@ GameObject:
   - component: {fileID: 423936035}
   - component: {fileID: 423936034}
   - component: {fileID: 423936033}
+  - component: {fileID: 423936038}
   m_Layer: 6
   m_Name: Pinball
   m_TagString: Untagged
@@ -1040,6 +1041,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &423936038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 423936032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 651f5bb894dac45d09ef54f60d4f98ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0.5
 --- !u!1 &533885137
 GameObject:
   m_ObjectHideFlags: 0
@@ -1213,7 +1227,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 860dc34c7fe3647288bf61cbb8b679c6, type: 2}
+  - {fileID: 2100000, guid: 06d9a4707309e419d8ec26ebe51bd019, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8666,7 +8680,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 867a4ef18cfdc4634a0f48cc185d3068, type: 2}
+  - {fileID: 2100000, guid: 61bc3b2e1382446cfa12f507bbeea91f, type: 2}
   - {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -9621,7 +9635,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 860dc34c7fe3647288bf61cbb8b679c6, type: 2}
+  - {fileID: 2100000, guid: 06d9a4707309e419d8ec26ebe51bd019, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10725,7 +10739,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 867a4ef18cfdc4634a0f48cc185d3068, type: 2}
+  - {fileID: 2100000, guid: 860dc34c7fe3647288bf61cbb8b679c6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
