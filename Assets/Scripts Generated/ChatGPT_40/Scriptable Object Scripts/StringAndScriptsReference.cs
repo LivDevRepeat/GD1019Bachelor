@@ -1,13 +1,25 @@
+using System;
+using UnityEngine.InputSystem.Editor;
+
 namespace Scripts_Generated.ChatGPT_40.Scriptabele_Object_Scripts
 {
     using UnityEngine;
     using System.Collections.Generic;
 
-    [CreateAssetMenu(menuName = "ScriptableObjects/StringAndScriptsReference")]
-    public class StringAndScriptsReference : ScriptableObject
+    [CreateAssetMenu(menuName = "PromtAndResponse")]
+    public class PromtAndResponse : ScriptableObject
     {
-        public string someString;
-        public List<TextAsset> referencedScripts;
+        public TextAsset prompt;
+        public List<Response> responses;
+
+        
+  
     }
 
+    public enum Model
+    {
+        GPT3_5,
+        GPT4_0,
+        GoogleBard
+    }
 }
