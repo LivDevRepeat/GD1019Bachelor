@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8bc823b-59ac-4f8d-b54c-40af130c2292" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts Generated/ChatGPT_40/Pinball/AI_GPT4.0_FlipperController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts Generated/ChatGPT_40/Pinball/AI_GPT4.0_FlipperController.cs.meta" afterDir="false" />
-    </list>
+    <list default="true" id="a8bc823b-59ac-4f8d-b54c-40af130c2292" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,6 +17,9 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts Generated/ChatGPT_40/Pinball/LifeManager.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectId" id="2ST8S5YSBidgffDss4XR82u3p8X" />
@@ -102,7 +103,7 @@
       <workItem from="1691486396176" duration="2799000" />
       <workItem from="1691503155436" duration="856000" />
       <workItem from="1691504952493" duration="61000" />
-      <workItem from="1691505077025" duration="771000" />
+      <workItem from="1691505077025" duration="1848000" />
     </task>
     <task id="LOCAL-00001" summary="[Manual Fix]">
       <option name="closed" value="true" />
