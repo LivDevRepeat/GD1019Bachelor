@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prompt: {fileID: 0}
   responses:
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 2700f9d8e4d184418b68bf18dc84c1e0, type: 2}
