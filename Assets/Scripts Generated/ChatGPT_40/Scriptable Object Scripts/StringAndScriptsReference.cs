@@ -1,6 +1,3 @@
-using System;
-using UnityEngine.InputSystem.Editor;
-
 namespace Scripts_Generated.ChatGPT_40.Scriptabele_Object_Scripts
 {
     using UnityEngine;
