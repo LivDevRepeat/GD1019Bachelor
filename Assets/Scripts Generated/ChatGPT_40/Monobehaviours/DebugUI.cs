@@ -1,15 +1,20 @@
+using System;
+
 namespace Scripts_Generated.ChatGPT_40.Monobehaviours
-{using UnityEngine;
-    using UnityEngine.UI; // Use this for the basic UI.Text
-    using TMPro; // Use this if you're using TextMeshPro
+{
+    using UnityEngine;
+    using UnityEngine.UI; // For basic UI elements like ScrollRect
+    using TMPro; // Use if you're using TextMeshPro
 
     public class DebugUI : MonoBehaviour
     {
-        // For UI.Text
+        // For UI.Text (Uncomment if you're using this instead of TextMeshPro)
         // public Text debugText;
 
-        // For TextMeshPro
+        // For TextMeshPro (Uncomment if you're using TextMeshPro)
         public TMP_Text debugText;
+
+        public ScrollRect scrollRect;
 
         private static DebugUI instance;
 
@@ -23,8 +28,10 @@ namespace Scripts_Generated.ChatGPT_40.Monobehaviours
 
             instance = this;
             DontDestroyOnLoad(gameObject);
+            DebugUI.Log("DebugUI initialized");
         }
 
+        
         public static void Log(string message)
         {
             if (instance == null)
@@ -35,9 +42,9 @@ namespace Scripts_Generated.ChatGPT_40.Monobehaviours
 
             instance.debugText.text += message + "\n";
 
-            // Scroll the debug log to the bottom so the latest message is always visible
-            Canvas.ForceUpdateCanvases(); // Update the canvas immediately
-            instance.GetComponentInParent<ScrollRect>().verticalNormalizedPosition = 0f;
+            // Auto-scroll to show the newest message
+            Canvas.ForceUpdateCanvases();  // Force all UI elements to update
+            instance.scrollRect.verticalNormalizedPosition = 0f;  // Scroll to bottom
         }
 
         public static void Clear()
@@ -51,5 +58,6 @@ namespace Scripts_Generated.ChatGPT_40.Monobehaviours
             instance.debugText.text = "";
         }
     }
+
 
 }
