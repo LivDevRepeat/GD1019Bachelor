@@ -6,9 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a8bc823b-59ac-4f8d-b54c-40af130c2292" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GD1019Bachelor/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GD1019Bachelor/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Pinball Base.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Pinball Base.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts Generated/ChatGPT_40/Monobehaviours/DebugUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts Generated/ChatGPT_40/Monobehaviours/DebugUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts Generated/ChatGPT_40/Monobehaviours/Pinball/Lifemanager_LLM_Response.md.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts Generated/ChatGPT_40/Monobehaviours/Pinball/Lifemanager_LLM_Response.md.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +107,7 @@
       <workItem from="1691503155436" duration="856000" />
       <workItem from="1691504952493" duration="61000" />
       <workItem from="1691505077025" duration="6597000" />
-      <workItem from="1691575864053" duration="3139000" />
+      <workItem from="1691575864053" duration="3831000" />
     </task>
     <task id="LOCAL-00001" summary="[Manual Fix]">
       <option name="closed" value="true" />
