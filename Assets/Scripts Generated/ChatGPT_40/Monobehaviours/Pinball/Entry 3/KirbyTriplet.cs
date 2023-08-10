@@ -1,3 +1,5 @@
+using System;
+
 namespace Scripts_Generated.ChatGPT_40.Monobehaviours.Pinball.Entry_3
 {
     using UnityEngine;
@@ -20,6 +22,11 @@ namespace Scripts_Generated.ChatGPT_40.Monobehaviours.Pinball.Entry_3
             }
 
             // Update visual representation of the Kirby triplet here
+        }
+
+        private void OnTriggerEnter(Collider other)
+        {
+            PassOver();
         }
     }
 
