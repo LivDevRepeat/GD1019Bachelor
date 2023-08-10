@@ -1,3 +1,5 @@
+using System;
+
 namespace Scripts_Generated.ChatGPT_40.Monobehaviours.Pinball
 {
     using UnityEngine;
@@ -20,7 +22,19 @@ namespace Scripts_Generated.ChatGPT_40.Monobehaviours.Pinball
         protected virtual void OnDefeat()
         {
             ScoringSystem.AddScore(points);
-            Destroy(gameObject);
+            Destroy(gameObject); // We do not want that
         }
+
+        //Had To Manually Add This
+        private void OnCollisionEnter(Collision other)
+        {
+            OnHit();
+        }
+        
+        private void OnTriggerEnter(Collider other)
+        {
+            OnHit();
+        }
+        
     }
 }
