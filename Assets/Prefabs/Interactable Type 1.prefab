@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 3714105644886736384}
   - component: {fileID: 3173385739114068788}
   - component: {fileID: 7480196960710309040}
+  - component: {fileID: 611222413538221107}
   m_Layer: 10
   m_Name: Interactable Type 1
   m_TagString: Untagged
@@ -674,3 +675,18 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+--- !u!114 &611222413538221107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6557475093786587095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 809ac7beef2d418a9274a833fb2fab0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerColor: {r: 1, g: 0, b: 0, a: 1}
+  collisionColor: {r: 0, g: 0, b: 1, a: 1}
+  duration: 2
