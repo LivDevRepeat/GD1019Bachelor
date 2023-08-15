@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Kirby
+  - Ball
   layers:
   - Default
   - TransparentFX

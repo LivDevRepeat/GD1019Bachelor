@@ -5,7 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a8bc823b-59ac-4f8d-b54c-40af130c2292" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/docs/Build/docs.data" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Build/docs.data" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts Generated/GoogleBard/Entry 2/Prompt Version 4 + Addition.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts Generated/GoogleBard/Entry 2/Prompt Version 4 + Addition/Addition" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts Generated/GoogleBard/Entry 2/Prompt Version 4 + Addition/Addition.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts Generated/GoogleBard/Entry 2/Prompt Version 4 + Addition/Kaboo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts Generated/GoogleBard/Entry 2/Prompt Version 4 + Addition/Kaboo.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts Generated/GoogleBard/Entry 2/Prompt Version 4 + Addition/KirbyTriplet.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts Generated/GoogleBard/Entry 2/Prompt Version 4 + Addition/KirbyTriplet.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts Generated/GoogleBard/Entry 2/Prompt Version 4 + Addition/MummyBall.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts Generated/GoogleBard/Entry 2/Prompt Version 4 + Addition/MummyBall.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts Generated/GoogleBard/Entry 2/Prompt Version 4 + Addition/PeripheralKaboo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts Generated/GoogleBard/Entry 2/Prompt Version 4 + Addition/PeripheralKaboo.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts Generated/GoogleBard/Entry 2/Prompt Version 4 + Addition/WarpStar.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts Generated/GoogleBard/Entry 2/Prompt Version 4 + Addition/WarpStar.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts Generated/GoogleBard/Entry 2/Prompt Version 4.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GD1019Bachelor/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GD1019Bachelor/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts Generated/GoogleBard/Entry 2/Kaboo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts Generated/GoogleBard/Entry 2/Prompt Version 4/Kaboo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts Generated/GoogleBard/Entry 2/Kaboo.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts Generated/GoogleBard/Entry 2/Prompt Version 4/Kaboo.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts Generated/GoogleBard/Entry 2/KirbyTriplet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts Generated/GoogleBard/Entry 2/Prompt Version 4/KirbyTriplet.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts Generated/GoogleBard/Entry 2/KirbyTriplet.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts Generated/GoogleBard/Entry 2/Prompt Version 4/KirbyTriplet.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts Generated/GoogleBard/Entry 2/MummyBall.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts Generated/GoogleBard/Entry 2/Prompt Version 4/MummyBall.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts Generated/GoogleBard/Entry 2/MummyBall.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts Generated/GoogleBard/Entry 2/Prompt Version 4/MummyBall.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts Generated/GoogleBard/Entry 2/PeripheralKaboo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts Generated/GoogleBard/Entry 2/Prompt Version 4/PeripheralKaboo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts Generated/GoogleBard/Entry 2/PeripheralKaboo.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts Generated/GoogleBard/Entry 2/Prompt Version 4/PeripheralKaboo.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts Generated/GoogleBard/Entry 2/WarpStar.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts Generated/GoogleBard/Entry 2/Prompt Version 4/WarpStar.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts Generated/GoogleBard/Entry 2/WarpStar.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts Generated/GoogleBard/Entry 2/Prompt Version 4/WarpStar.cs.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,10 +40,6 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
     <option name="SIGN_OFF_COMMIT" value="true" />
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts Generated/GoogleBard/Prompt Version 4/Kaboo.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts Generated/GoogleBard/Prompt Version 4/KirbyTriplet.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -38,12 +58,13 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "add-new-build-to-main",
+    "git-widget-placeholder": "45-implementing-google-bard-version-of-level",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -113,6 +134,10 @@
       <workItem from="1691505077025" duration="6597000" />
       <workItem from="1691575864053" duration="3831000" />
       <workItem from="1691602022425" duration="42000" />
+      <workItem from="1691656275243" duration="12264000" />
+      <workItem from="1691688808200" duration="141000" />
+      <workItem from="1692090777531" duration="71000" />
+      <workItem from="1692109367110" duration="57000" />
     </task>
     <task id="LOCAL-00001" summary="[Manual Fix]">
       <option name="closed" value="true" />
