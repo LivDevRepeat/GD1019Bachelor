@@ -1,9 +1,8 @@
 using Scripts_Generated.ChatGPT_40.Monobehaviours;
+using UnityEngine;
 
-namespace GeneratedCode.GoogleBard.Entry_3
+namespace Scripts_Generated.GoogleBard.Entry_3.Prompt_Version_4
 {
-    using UnityEngine;
-
     public class Launcher : MonoBehaviour {
 
         public enum Direction {
