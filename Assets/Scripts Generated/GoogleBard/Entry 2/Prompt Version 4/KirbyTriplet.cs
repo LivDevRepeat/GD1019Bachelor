@@ -1,10 +1,9 @@
 using Scripts_Generated.ChatGPT_40.Monobehaviours;
-
-namespace GeneratedCode.GoogleBard.Entry_2
-{
 using UnityEngine;
 
-public class KirbyTriplet : MonoBehaviour {
+namespace Scripts_Generated.GoogleBard.Entry_2.Prompt_Version_4
+{
+    public class KirbyTriplet : MonoBehaviour {
 
     public int awakeState = 0; // 0 = asleep, 1 = awake, 2 = fully down
 

@@ -1,7 +1,7 @@
 using Scripts_Generated.ChatGPT_40.Monobehaviours;
 using UnityEngine;
 
-namespace GeneratedCode.GoogleBard.Entry_2
+namespace Scripts_Generated.GoogleBard.Entry_2.Prompt_Version_4
 {
     public class PeripheralKaboo : MonoBehaviour 
     {
