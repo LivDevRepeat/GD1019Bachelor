@@ -1,0 +1,69 @@
+@startuml
+
+class GameObject {
+   + Hit(): void
+}
+
+class Kaboo <<GameObject>> {
+   + pointsPerHit: int
+   - isRetracted: bool
+   + Hit(): void
+}
+
+class BigKaboo <<Kaboo>> {
+   - isRevealed: bool
+   + Disappear(): void
+}
+
+class PeripheralKaboo <<Kaboo>> {
+   + Retract(): void
+}
+
+class Gordow <<GameObject>> {
+   + pointsPerHit: int
+   + Hit(): void
+}
+
+class MummyBall <<GameObject>> {
+   + pointsPerHit: int
+   - hitCount: int
+   + Hit(): void
+   + SummonWarpStar(): void
+}
+
+class KirbyTriplet {
+   - expressionState: Expression
+   + ChangeExpression(): void
+   + WakeUpAll(): bool
+   + SleepAll(): bool
+}
+
+enum Expression {
+   UP
+   MIDDLE
+   DOWN
+}
+
+class StarLauncher {
+   - isAvailable: bool
+   + Launch(direction: Direction): void
+}
+
+enum Direction {
+   UP
+   LEFT
+   RIGHT
+   DOWN_LEFT
+   DOWN_RIGHT
+}
+
+class ScoringElement {
+   + points: int
+}
+
+BigKaboo --> StarLauncher: "0..1->reveals"
+PeripheralKaboo --> BigKaboo: "6..6->protects"
+Gordow --> PeripheralKaboo: "2..2->guards"
+KirbyTriplet ..> ScoringElement: "0..1->rewards"
+
+@enduml

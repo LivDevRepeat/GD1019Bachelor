@@ -1,0 +1,70 @@
+@startuml
+abstract class GameObject {
+  + void OnCollisionEnter()
+}
+
+class LowerBoard {
+  + void Initialize()
+}
+
+class MummyBall extends GameObject {
+  + int hitCount = 0
+  + bool IsDefeated()
+  + void Move()
+  + void OnHit()
+}
+
+class Kaboo extends GameObject {
+  + bool isRetracted = false
+  + void OnHit()
+}
+
+class BigKaboo extends Kaboo {
+  + void RevealLauncher()
+}
+
+class Gordow extends GameObject {
+  + void OnHit()
+}
+
+class KirbyTriplet {
+  + KirbyState state
+  + void ChangeExpression()
+  + void CheckTripletsState()
+}
+
+enum KirbyState {
+  Awake,
+  Neutral,
+  Down
+}
+
+class Bumper extends GameObject {
+  + void OnHit()
+}
+
+class Launcher {
+  + int directionCount = 5
+  + void Launch(int direction)
+}
+
+class ScoringSystem {
+  + void AddScore(int points)
+  + void ShowScore()
+}
+
+LowerBoard --> MummyBall : Contains
+LowerBoard --> BigKaboo : Contains
+LowerBoard --> Gordow : Contains 2
+LowerBoard --> Kaboo : Contains 6
+LowerBoard --> KirbyTriplet : Contains 3
+LowerBoard --> Bumper : Contains
+LowerBoard --> Launcher : Accesses
+
+MummyBall ..> ScoringSystem : Notifies
+Kaboo ..> ScoringSystem : Notifies
+BigKaboo ..> ScoringSystem : Notifies
+Gordow ..> ScoringSystem : Notifies
+Bumper ..> ScoringSystem : Notifies
+KirbyTriplet ..> ScoringSystem : Notifies
+@enduml
