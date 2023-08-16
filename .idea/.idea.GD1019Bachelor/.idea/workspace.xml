@@ -4,7 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8bc823b-59ac-4f8d-b54c-40af130c2292" name="Changes" comment="New Folders" />
+    <list default="true" id="a8bc823b-59ac-4f8d-b54c-40af130c2292" name="Changes" comment="[AI] [ChatGPT 3.5] Generated ULM Out of GDD with very Short Prompt">
+      <change afterPath="$PROJECT_DIR$/Assets/Generated Diagrams/Decorator Experiment.puml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Generated Diagrams/Decorator Experiment.puml.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Generated Diagrams/Prompt 11/ChatGPT 3_5.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Generated Diagrams/Prompt 11/ChatGPT 3_5/FlipperGameLevelClassDiagram V1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Generated Diagrams/Prompt 11/ChatGPT 3_5/FlipperGameLevelClassDiagram V2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Generated Diagrams/Prompt 11/ChatGPT 3_5/FlipperGameLevelClassDiagram V3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Generated Diagrams/Prompt 11/ChatGPT 4_0.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Generated Diagrams/Prompt 11/ChatGPT 4_0/FlipperGameLevelClassDiagram V1.puml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Generated Diagrams/Prompt 11/ChatGPT 4_0/FlipperGameLevelClassDiagram V1.puml.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Generated Diagrams/Prompt 11/ChatGPT 4_0/FlipperGameLevelClassDiagram V2.puml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Generated Diagrams/Prompt 11/ChatGPT 4_0/FlipperGameLevelClassDiagram V2.puml.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Generated Diagrams/Prompt 11/ChatGPT 4_0/FlipperGameLevelClassDiagram V3.puml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Generated Diagrams/Prompt 11/ChatGPT 4_0/FlipperGameLevelClassDiagram V3.puml.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GD1019Bachelor/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GD1019Bachelor/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -121,7 +136,7 @@
       <workItem from="1691688808200" duration="141000" />
       <workItem from="1692090777531" duration="71000" />
       <workItem from="1692109367110" duration="57000" />
-      <workItem from="1692110897875" duration="5337000" />
+      <workItem from="1692110897875" duration="8872000" />
     </task>
     <task id="LOCAL-00001" summary="[Manual Fix]">
       <option name="closed" value="true" />
@@ -195,7 +210,23 @@
       <option name="project" value="LOCAL" />
       <updated>1692174603710</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="[Manual Fix] Added start &amp; end tag for ulm">
+      <option name="closed" value="true" />
+      <created>1692177525466</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1692177525466</updated>
+    </task>
+    <task id="LOCAL-00011" summary="[AI] [ChatGPT 3.5] Generated ULM Out of GDD with very Short Prompt">
+      <option name="closed" value="true" />
+      <created>1692178410016</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1692178410016</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -226,7 +257,9 @@
     <MESSAGE value="[AI] [ChatGPT 4.0] Generated ULM Out of GDD" />
     <MESSAGE value="[AI] [ChatGPT 3.5] Generated ULM Out of GDD" />
     <MESSAGE value="New Folders" />
-    <option name="LAST_COMMIT_MESSAGE" value="New Folders" />
+    <MESSAGE value="[Manual Fix] Added start &amp; end tag for ulm" />
+    <MESSAGE value="[AI] [ChatGPT 3.5] Generated ULM Out of GDD with very Short Prompt" />
+    <option name="LAST_COMMIT_MESSAGE" value="[AI] [ChatGPT 3.5] Generated ULM Out of GDD with very Short Prompt" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

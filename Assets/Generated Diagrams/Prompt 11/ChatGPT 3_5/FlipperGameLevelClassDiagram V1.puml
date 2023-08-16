@@ -1,0 +1,46 @@
+@startuml
+
+class "Wispy-Woods Land" {
+  +KabooLeftUpperCorner
+  +KabooRightUpperCorner
+  +GordowLeft
+  +GordowRight
+  +CentralKaboo
+  +MummyBall
+  +KirbyTriplet1
+  +KirbyTriplet2
+  +KirbyTriplet3
+  +StarShapedLauncher
+  +MaximTomato
+  +DrainStoppers
+  +Bumper
+  +Inlane
+  +Outlane
+  +EnergyDrink
+}
+
+"KirbyTriplet1" -- "KirbyTriplet2"
+"KirbyTriplet2" -- "KirbyTriplet3"
+"KirbyTriplet3" -- "MaximTomato"
+
+"KabooLeftUpperCorner" -- "GordowLeft"
+"KabooRightUpperCorner" -- "GordowRight"
+"GordowLeft" -- "CentralKaboo"
+"GordowRight" -- "CentralKaboo"
+"CentralKaboo" -- "MummyBall"
+"KirbyTriplet1" -- "KirbyTriplet2" : Passing over changes expression
+"KirbyTriplet2" -- "KirbyTriplet3" : Passing over changes expression
+
+"MummyBall" -- "WarpStar"
+"KirbyTriplet1" -- "MaximTomato" : All wake up
+"KirbyTriplet2" -- "MaximTomato" : All wake up
+"KirbyTriplet3" -- "MaximTomato" : All wake up
+
+"Peripheral Kaboo" -- "StarShapedLauncher"
+"StarShapedLauncher" -- "NextBoard" : Launching upward
+
+"WarpStar" -- "WarpRoom"
+
+"Big Kaboo" -- "StarShapedLauncher"
+
+@enduml

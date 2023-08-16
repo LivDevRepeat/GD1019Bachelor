@@ -1,0 +1,57 @@
+@startuml
+!define GameObject class
+!define Transform class
+
+GameObject "Lower board" as LowerBoard {
+    GameObject "Kaboo" as Kaboo1
+    GameObject "Kaboo" as Kaboo2
+    GameObject "Kaboo" as Kaboo3
+    GameObject "Kaboo" as Kaboo4
+    GameObject "Kaboo" as Kaboo5
+    GameObject "Kaboo" as Kaboo6
+    
+    GameObject "Gordow" as Gordow1
+    GameObject "Gordow" as Gordow2
+    
+    GameObject "Big Kaboo" as BigKaboo
+    
+    GameObject "Mummy Ball" as MummyBall
+    
+    GameObject "Kirby Triplet" as KirbyTriplet1
+    GameObject "Kirby Triplet" as KirbyTriplet2
+    GameObject "Kirby Triplet" as KirbyTriplet3
+    
+    GameObject "Maxim Tomato" as MaximTomato
+    
+    GameObject "Launcher" as Launcher
+    GameObject "Warp Star" as WarpStar
+    GameObject "Kirby" as Kirby
+}
+
+LowerBoard --> Kaboo1
+LowerBoard --> Kaboo2
+LowerBoard --> Kaboo3
+LowerBoard --> Kaboo4
+LowerBoard --> Kaboo5
+LowerBoard --> Kaboo6
+
+LowerBoard --> Gordow1
+LowerBoard --> Gordow2
+
+LowerBoard --> BigKaboo
+
+LowerBoard --> MummyBall
+
+LowerBoard --> KirbyTriplet1
+LowerBoard --> KirbyTriplet2
+LowerBoard --> KirbyTriplet3
+
+KirbyTriplet1 --> MaximTomato
+KirbyTriplet2 --> MaximTomato
+KirbyTriplet3 --> MaximTomato
+
+LowerBoard --> Launcher
+LowerBoard --> WarpStar
+WarpStar --> Kirby
+
+@enduml
