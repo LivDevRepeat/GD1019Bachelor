@@ -4,37 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8bc823b-59ac-4f8d-b54c-40af130c2292" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts Generated/GoogleBard/Entry 2/Prompt Version 4 + Addition.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts Generated/GoogleBard/Entry 2/Prompt Version 4 + Addition/Addition" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts Generated/GoogleBard/Entry 2/Prompt Version 4 + Addition/Addition.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts Generated/GoogleBard/Entry 2/Prompt Version 4 + Addition/Kaboo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts Generated/GoogleBard/Entry 2/Prompt Version 4 + Addition/Kaboo.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts Generated/GoogleBard/Entry 2/Prompt Version 4 + Addition/KirbyTriplet.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts Generated/GoogleBard/Entry 2/Prompt Version 4 + Addition/KirbyTriplet.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts Generated/GoogleBard/Entry 2/Prompt Version 4 + Addition/MummyBall.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts Generated/GoogleBard/Entry 2/Prompt Version 4 + Addition/MummyBall.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts Generated/GoogleBard/Entry 2/Prompt Version 4 + Addition/PeripheralKaboo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts Generated/GoogleBard/Entry 2/Prompt Version 4 + Addition/PeripheralKaboo.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts Generated/GoogleBard/Entry 2/Prompt Version 4 + Addition/WarpStar.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts Generated/GoogleBard/Entry 2/Prompt Version 4 + Addition/WarpStar.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts Generated/GoogleBard/Entry 2/Prompt Version 4.meta" afterDir="false" />
+    <list default="true" id="a8bc823b-59ac-4f8d-b54c-40af130c2292" name="Changes" comment="[AI] [ChatGPT 4.0] Generated ULM Out of GDD">
+      <change afterPath="$PROJECT_DIR$/Assets/Generated Diagrams/Prompt 11.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Generated Diagrams/Prompt 11/Google Bard.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Generated Diagrams/Prompt 9/ChatGPT 3_5.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Generated Diagrams/Prompt 9/ChatGPT 3_5/FlipperGameLevelClassDiagram V1.puml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Generated Diagrams/Prompt 9/ChatGPT 3_5/FlipperGameLevelClassDiagram V1.puml.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Generated Diagrams/Prompt 9/ChatGPT 3_5/FlipperGameLevelClassDiagram V2.puml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Generated Diagrams/Prompt 9/ChatGPT 3_5/FlipperGameLevelClassDiagram V2.puml.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Generated Diagrams/Prompt 9/ChatGPT 3_5/FlipperGameLevelClassDiagram V3.puml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Generated Diagrams/Prompt 9/ChatGPT 3_5/FlipperGameLevelClassDiagram V3.puml.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Generated Diagrams/Prompt 9/Google Bard.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GD1019Bachelor/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GD1019Bachelor/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts Generated/GoogleBard/Entry 2/Kaboo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts Generated/GoogleBard/Entry 2/Prompt Version 4/Kaboo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts Generated/GoogleBard/Entry 2/Kaboo.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts Generated/GoogleBard/Entry 2/Prompt Version 4/Kaboo.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts Generated/GoogleBard/Entry 2/KirbyTriplet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts Generated/GoogleBard/Entry 2/Prompt Version 4/KirbyTriplet.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts Generated/GoogleBard/Entry 2/KirbyTriplet.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts Generated/GoogleBard/Entry 2/Prompt Version 4/KirbyTriplet.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts Generated/GoogleBard/Entry 2/MummyBall.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts Generated/GoogleBard/Entry 2/Prompt Version 4/MummyBall.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts Generated/GoogleBard/Entry 2/MummyBall.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts Generated/GoogleBard/Entry 2/Prompt Version 4/MummyBall.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts Generated/GoogleBard/Entry 2/PeripheralKaboo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts Generated/GoogleBard/Entry 2/Prompt Version 4/PeripheralKaboo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts Generated/GoogleBard/Entry 2/PeripheralKaboo.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts Generated/GoogleBard/Entry 2/Prompt Version 4/PeripheralKaboo.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts Generated/GoogleBard/Entry 2/WarpStar.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts Generated/GoogleBard/Entry 2/Prompt Version 4/WarpStar.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts Generated/GoogleBard/Entry 2/WarpStar.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts Generated/GoogleBard/Entry 2/Prompt Version 4/WarpStar.cs.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="UML Sequence" />
+        <option value="UML Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -55,10 +49,11 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultPlantUmlFileTemplate": "UML Class",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "45-implementing-google-bard-version-of-level",
+    "git-widget-placeholder": "58-generated-ulm-diagrams",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -138,6 +133,7 @@
       <workItem from="1691688808200" duration="141000" />
       <workItem from="1692090777531" duration="71000" />
       <workItem from="1692109367110" duration="57000" />
+      <workItem from="1692110897875" duration="4871000" />
     </task>
     <task id="LOCAL-00001" summary="[Manual Fix]">
       <option name="closed" value="true" />
@@ -155,7 +151,47 @@
       <option name="project" value="LOCAL" />
       <updated>1690363315654</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="[AI] [ChatGPT 4.0] Generated ULM Out of GDD">
+      <option name="closed" value="true" />
+      <created>1692173128991</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1692173128991</updated>
+    </task>
+    <task id="LOCAL-00004" summary="[AI] [ChatGPT 4.0] Generated ULM Out of GDD&#10;&#10;Signed-off-by: LivReTaRDIS &lt;lv.zuhause@gmail.com&gt;">
+      <option name="closed" value="true" />
+      <created>1692173306498</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1692173306498</updated>
+    </task>
+    <task id="LOCAL-00005" summary="[AI] [Google Bard] Generated ULM Out of GDD&#10;&#10;Signed-off-by: LivReTaRDIS &lt;lv.zuhause@gmail.com&gt;">
+      <option name="closed" value="true" />
+      <created>1692173548702</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1692173548702</updated>
+    </task>
+    <task id="LOCAL-00006" summary="[AI] [Google Bard] Generated ULM Out of GDD with very Short Prompt &#10;&#10;Signed-off-by: LivReTaRDIS &lt;lv.zuhause@gmail.com&gt;">
+      <option name="closed" value="true" />
+      <created>1692173936489</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1692173936489</updated>
+    </task>
+    <task id="LOCAL-00007" summary="[AI] [ChatGPT 4.0] Generated ULM Out of GDD">
+      <option name="closed" value="true" />
+      <created>1692174507255</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1692174507255</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -180,7 +216,11 @@
     <MESSAGE value="Add Game Object &amp; Empty Script" />
     <MESSAGE value="[Manual Fix]" />
     <MESSAGE value="[AI] [ChatGPT 4.0] Generate different Version that uses Callback context" />
-    <option name="LAST_COMMIT_MESSAGE" value="[AI] [ChatGPT 4.0] Generate different Version that uses Callback context" />
+    <MESSAGE value="[AI] [ChatGPT 4.0] Generated ULM Out of GDD&#10;&#10;Signed-off-by: LivReTaRDIS &lt;lv.zuhause@gmail.com&gt;" />
+    <MESSAGE value="[AI] [Google Bard] Generated ULM Out of GDD&#10;&#10;Signed-off-by: LivReTaRDIS &lt;lv.zuhause@gmail.com&gt;" />
+    <MESSAGE value="[AI] [Google Bard] Generated ULM Out of GDD with very Short Prompt &#10;&#10;Signed-off-by: LivReTaRDIS &lt;lv.zuhause@gmail.com&gt;" />
+    <MESSAGE value="[AI] [ChatGPT 4.0] Generated ULM Out of GDD" />
+    <option name="LAST_COMMIT_MESSAGE" value="[AI] [ChatGPT 4.0] Generated ULM Out of GDD" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
