@@ -1,3 +1,4 @@
+@startuml
 class LowerBoard {
   + Kaboo[6] kaboos
   + Gordow[2] gordows
@@ -48,3 +49,4 @@ LowerBoard *-- Gordow
 LowerBoard *-- BigKaboo
 LowerBoard *-- MummyBall
 LowerBoard *-- KirbyTriplet
+@enduml
