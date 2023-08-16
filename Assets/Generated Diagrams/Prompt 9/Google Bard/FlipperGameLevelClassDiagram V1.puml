@@ -1,0 +1,48 @@
+@startuml
+
+abstract class LevelObject {
+  + score: int
+  + onHit(): void
+}
+
+class Kaboo extends LevelObject {
+  + isRetracted: boolean
+}
+
+class Gordow extends LevelObject {
+}
+
+class MummyBall extends LevelObject {
+  + hitCount: int
+}
+
+class KirbyTriplet extends LevelObject {
+  + expression: int
+}
+
+class Flipper extends LevelObject {
+}
+
+class Bumper extends LevelObject {
+}
+
+class Inlane extends LevelObject {
+}
+
+class Outlane extends LevelObject {
+}
+
+class EnergyDrink extends LevelObject {
+}
+
+Kaboo -> LevelObject
+Gordow -> LevelObject
+MummyBall -> LevelObject
+KirbyTriplet -> LevelObject
+Flipper -> LevelObject
+Bumper -> LevelObject
+Inlane -> LevelObject
+Outlane -> LevelObject
+EnergyDrink -> LevelObject
+
+@enduml
