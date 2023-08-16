@@ -1,77 +1,111 @@
 @startuml
-package LowerBoard  {
+package "Lower Board"  {
+   skinparam groupInheritance 2
+   skinparam groupBackground #EEEBDC
     
-    class Kaboo  {
-        - hitPoints: 360
-        - retractedHitPoints: 180
-        + isRetracted: bool
-        - Hit(): void
+    class Hittable {
+      - hitPoints: int
+      - Hit(): void
+      - CustomOnHit(): void virtual
     }
     
-    class BigKaboo{
-      - hitPoints: 480
+    class Passable {
+      - Pass(): void
+      - CustomOnPass(): void virtual
+    }
+    class Launcher extends Passable {
+      - Launch(direction): void
+    }
+    
+    abstract class DrainStopper extends Hittable {
+        -isActive: bool
+        + Activate(): void
+        + Deactivate(): void
+    }
+    
+    
+    class Kaboo extends Hittable  {
+        - retractedHitPoints: 180
+        + isRetracted: bool
+        - CustomOnHit(): void override
+    }
+    
+    class BigKaboo extends Hittable{
       + isRetracted: bool
-      - Hit(): void
-      - Retract(): void 
+      - Retract(): void
       + AllKaboosRetracted(Kaboo): void
     }
     
-    class Gordow {
-      - hitPoints: 240
-      - Hit(): void
+    entity Gordow extends Hittable {
     }
     
-    class MummyBall{
+    entity Bumper extends Hittable {
+    
+    }
+    
+    
+    class MummyBall extends Hittable {
       - hitsCount: 0
-      - hitPoints: 360
-      - defeatPoints: 8
-      - Hit(): void 
+      - defeatPoints: 8 
       + Defeat(): void
     }
     
-    class KirbySprite {
+
+    
+    class KirbySprite extends Passable{
       + state: ExpressionState
       + ChangeExpression(): void
+      - CustomOnPass(): void override
     }
     
-    class WarpStar {
+    class WarpStar extends Passable {
       + isActive: bool
       + Call(): void
       + Warp(): void
     }
     
-    class Bumper {
-      - hitPoints: 50
-      - Hit(): void
+    
+    class Inlane extends Passable {
+      - CustomOnPass(): void override
+    }
+   
+  
+    class Outlane extends Passable{
+        - CustomOnPass(): void override
     }
     
-    class Inlane {
-      - hitPoints: 10
-      - Traverse(): void
+    class EnergyDrink extends DrainStopper {
+      - CustomOnHit(): void override  
     }
     
-    class Outlane {
-      - hitPoints: 200
-      - Traverse(): void
+    entity MaximTomato extends DrainStopper {
+   }
+    
+    class StarLauncher  extends Launcher {
+      
     }
     
-    class EnergyDrink {
-      - hitPoints: 100
-      - Hit(): void
-      + Appear(): void
-      + Remove(): void
+   class Scoremanager <<(S,#FF7700) Singleton>> {
+      - score: int
+      - highScore: int
+      - bonusScore: int
+      - bonusMultiplier: int
+      + AddScore(): void
+      + AddBonus(): void
+      + AddBonusMultiplier(): void
+      + ResetScore(): void
     }
     
-    class MaximTomato {
-      + Appear(): void
-      + Remove(): void
+    abstract class stateMachine {
+      - currentState: State
+      - nextState: State
+      - ChangeState(): void
     }
     
-    class StarLauncher {
-      - isActive: bool
-      + LaunchDirection: Direction
-      + Launch(): void
-    }
+
+
+    
+    
     
     enum ExpressionState {
       SLEEP,
@@ -87,31 +121,9 @@ package LowerBoard  {
       CENTER
     }
     
-    entity "Lower Board" as LowerBoard {
-      + Kaboo 
-      + BigKaboo
-      + Gordow
-      + MummyBall
-      + KirbySprite
-      + WarpStar
-      + Bumper
-      + Inlane
-      + Outlane
-      + EnergyDrink
-      + MaximTomato
-      + DrainStopper
-      + StarLauncher
-    }
-
-    LowerBoard *-- Kaboo :  6 
-    LowerBoard *-- BigKaboo :  1
-    LowerBoard *-- Gordow : 5
-    LowerBoard *-- MummyBall :  1
-    LowerBoard *-- KirbySprite :  3
-    LowerBoard *-- WarpStar :  1
-    LowerBoard *-- Bumper :  2
-    LowerBoard *-- Inlane :  2
-    LowerBoard *-- Outlane :  2
+    Scoremanager <- Hittable
+    KirbySprite - ExpressionState
+    StarLauncher - Direction
     
     Kaboo--> BigKaboo:  <<modiefies>>
     BigKaboo --> StarLauncher:  <<modifies>>
@@ -120,9 +132,12 @@ package LowerBoard  {
     KirbySprite --> MaximTomato
     KirbySprite --> EnergyDrink
     
-     Inlane -> EnergyDrink : <<calls>>
-    
-    note top of KirbySprite : "Depending on the\nstate of the\nother KirbySprites,\nthe MaximTomato\nor DrainStopper\nwill be called\nwhen the\nKirbySprite\nchanges\nexpression."
+    Inlane --> EnergyDrink : <<calls>>
+        
+    class Hittable extends Passable
+   
+   
+   
     
     
     
