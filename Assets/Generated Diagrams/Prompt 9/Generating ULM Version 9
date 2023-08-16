@@ -1,0 +1,20 @@
+I’m Developing a Flipper Game i work in the Unity Engine. The Base game Functionality is already setup. I will provide you with the Game Design Document for one level. I want you to Provide me code for a PlantUML diagram of the logic of the level objects wich will be Monobehaviors. Instead of repeating behaviour let the classes inherit from parent classes. 
+The GDD:
+Lower board
+
+The lower-most board of Wispy-Woods Land features Kaboo and Mummy Ball.
+The lower-most board features a generally rounded shape with six Kaboos occupying the left and right upper corners, two Gordows which guard the Kaboos, a central Kaboo (referred to as Big Kaboo in the manual) in the middle of the board, and a Mummy Ball hovering back and forth over the Big Kaboo. Additionally, the board features three Kirby sprites in the lower-middle area just above the flippers called the "Kirby Triplets".
+The following actions can be performed on this board:
+Hitting Mummy Ball eight times will defeat it and call a Warp Star in which will return Kirby to the warp room to access other Pinball Lands.
+Passing over a Kirby Triplet will change its expression. If all three are made to wake up, a Maxim Tomato will appear in the gutter. If all three are made fully down, all drain stoppers are removed.
+Hitting the six Kaboos on the periphery such that they all retract will cause the Big Kaboo to disappear, revealing a star-shaped launcher that can launch Kirby in five different directions. Launching upward will allow Kirby to access the next board up, though it is possible to bump into Mummy Ball on the way and get intercepted.
+Scoring
+Big Kaboo - 480 points per hit
+Gordow - 240 points per hit
+Mummy Ball - 360 points per hit (+M when defeated)
+Peripheral Kaboo - 240 points for first hit, 180 points for hits while retracted
+Bumper - 50 points per hit
+Passing through inlane - 10 points
+Passing through outlane - 200 points
+Energy Drink - 100 points
+“

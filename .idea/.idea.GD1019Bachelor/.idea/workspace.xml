@@ -4,19 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8bc823b-59ac-4f8d-b54c-40af130c2292" name="Changes" comment="[AI] [ChatGPT 4.0] Generated ULM Out of GDD">
-      <change afterPath="$PROJECT_DIR$/Assets/Generated Diagrams/Prompt 11.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Generated Diagrams/Prompt 11/Google Bard.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Generated Diagrams/Prompt 9/ChatGPT 3_5.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Generated Diagrams/Prompt 9/ChatGPT 3_5/FlipperGameLevelClassDiagram V1.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Generated Diagrams/Prompt 9/ChatGPT 3_5/FlipperGameLevelClassDiagram V1.puml.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Generated Diagrams/Prompt 9/ChatGPT 3_5/FlipperGameLevelClassDiagram V2.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Generated Diagrams/Prompt 9/ChatGPT 3_5/FlipperGameLevelClassDiagram V2.puml.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Generated Diagrams/Prompt 9/ChatGPT 3_5/FlipperGameLevelClassDiagram V3.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Generated Diagrams/Prompt 9/ChatGPT 3_5/FlipperGameLevelClassDiagram V3.puml.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Generated Diagrams/Prompt 9/Google Bard.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GD1019Bachelor/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GD1019Bachelor/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="a8bc823b-59ac-4f8d-b54c-40af130c2292" name="Changes" comment="New Folders" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -133,7 +121,7 @@
       <workItem from="1691688808200" duration="141000" />
       <workItem from="1692090777531" duration="71000" />
       <workItem from="1692109367110" duration="57000" />
-      <workItem from="1692110897875" duration="4871000" />
+      <workItem from="1692110897875" duration="5337000" />
     </task>
     <task id="LOCAL-00001" summary="[Manual Fix]">
       <option name="closed" value="true" />
@@ -191,7 +179,23 @@
       <option name="project" value="LOCAL" />
       <updated>1692174507255</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="[AI] [ChatGPT 3.5] Generated ULM Out of GDD">
+      <option name="closed" value="true" />
+      <created>1692174577323</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1692174577323</updated>
+    </task>
+    <task id="LOCAL-00009" summary="New Folders">
+      <option name="closed" value="true" />
+      <created>1692174603710</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1692174603710</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -220,7 +224,9 @@
     <MESSAGE value="[AI] [Google Bard] Generated ULM Out of GDD&#10;&#10;Signed-off-by: LivReTaRDIS &lt;lv.zuhause@gmail.com&gt;" />
     <MESSAGE value="[AI] [Google Bard] Generated ULM Out of GDD with very Short Prompt &#10;&#10;Signed-off-by: LivReTaRDIS &lt;lv.zuhause@gmail.com&gt;" />
     <MESSAGE value="[AI] [ChatGPT 4.0] Generated ULM Out of GDD" />
-    <option name="LAST_COMMIT_MESSAGE" value="[AI] [ChatGPT 4.0] Generated ULM Out of GDD" />
+    <MESSAGE value="[AI] [ChatGPT 3.5] Generated ULM Out of GDD" />
+    <MESSAGE value="New Folders" />
+    <option name="LAST_COMMIT_MESSAGE" value="New Folders" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
