@@ -1,0 +1,58 @@
+@startuml
+
+class LowerBoard {
+  - Shape: Rounded
+  + BigKaboo: Kaboo
+  + MummyBall: MummyBall
+  + KirbyTriplets: Kirby[3]
+  + Gordows: Gordow[2]
+  + Kaboos: Kaboo[6]
+}
+
+class Kaboo {
+  + hit(): void
+  + retract(): void
+  + disappear(): void
+  # scoreHit: 480
+  # scoreRetractedHit: 180
+}
+
+class MummyBall {
+  + hover(): void
+  + hit(): void
+  + defeated(): bool
+  # scoreHit: 360
+  # scoreDefeated: M
+}
+
+class Kirby {
+  + changeExpression(): void
+  + wakeUp(): void
+  + fullyDown(): void
+}
+
+class Gordow {
+  + guardKaboo(): void
+  + hit(): void
+  # scoreHit: 240
+}
+
+class Scoring {
+  + BigKabooHit: 480
+  + GordowHit: 240
+  + MummyBallHit: 360
+  + PeripheralKabooHit: 240
+  + PeripheralKabooRetractedHit: 180
+  + BumperHit: 50
+  + Inlane: 10
+  + Outlane: 200
+  + EnergyDrink: 100
+}
+
+LowerBoard --> Kaboo: contains
+LowerBoard --> MummyBall: contains
+LowerBoard --> Kirby: contains 3
+LowerBoard --> Gordow: contains 2
+LowerBoard --> Scoring: has scoring system
+
+@enduml
