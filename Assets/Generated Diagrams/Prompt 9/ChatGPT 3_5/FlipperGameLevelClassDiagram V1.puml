@@ -1,0 +1,92 @@
+@startuml
+
+abstract class FlipperGameObject {
+    + OnHit()
+}
+
+class LowerBoard {
+    + OnHitMummyBall()
+    + OnHitKirbyTriplet()
+    + OnHitPeripheralKaboo()
+    + OnHitGordow()
+}
+
+class MummyBall {
+    + OnDefeat()
+}
+
+class KirbyTriplet {
+    + OnWakeUp()
+    + OnFullyDown()
+}
+
+class PeripheralKaboo {
+    + OnRetract()
+}
+
+class BigKaboo {
+    + OnDisappear()
+}
+
+class StarLauncher {
+    + LaunchDirection(direction: Vector2)
+}
+
+class WarpStar {
+    + ReturnToWarpRoom()
+}
+
+class MaximTomato {
+    + OnCollected()
+}
+
+class DrainStopper {
+    + Remove()
+}
+
+class Bumper {
+    + OnHit()
+}
+
+class Inlane {
+    + OnPass()
+}
+
+class Outlane {
+    + OnPass()
+}
+
+class EnergyDrink {
+    + OnCollected()
+}
+
+FlipperGameObject <|-- LowerBoard
+LowerBoard *-- MummyBall
+LowerBoard *-- KirbyTriplet
+LowerBoard *-- PeripheralKaboo
+LowerBoard *-- Gordow
+LowerBoard *-- BigKaboo
+LowerBoard *-- StarLauncher
+LowerBoard *-- WarpStar
+LowerBoard *-- MaximTomato
+LowerBoard *-- DrainStopper
+LowerBoard *-- Bumper
+LowerBoard *-- Inlane
+LowerBoard *-- Outlane
+LowerBoard *-- EnergyDrink
+
+MummyBall --|> FlipperGameObject
+KirbyTriplet --|> FlipperGameObject
+PeripheralKaboo --|> FlipperGameObject
+Gordow --|> FlipperGameObject
+BigKaboo --|> FlipperGameObject
+StarLauncher --|> FlipperGameObject
+WarpStar --|> FlipperGameObject
+MaximTomato --|> FlipperGameObject
+DrainStopper --|> FlipperGameObject
+Bumper --|> FlipperGameObject
+Inlane --|> FlipperGameObject
+Outlane --|> FlipperGameObject
+EnergyDrink --|> FlipperGameObject
+
+@enduml

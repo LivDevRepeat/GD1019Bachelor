@@ -1,0 +1,99 @@
+@startuml
+
+abstract class GameObject {
+  + void Initialize()
+}
+
+abstract class Flipper : GameObject {
+    +void Activate()
+    +void Deactivate()
+}
+
+
+
+class LowerBoard : GameObject {
+    -List<Kaboo> kaboos
+    -List<Gordow> gordows
+    -BigKaboo bigKaboo
+    -MummyBall mummyBall
+    -List<KirbyTriplet> kirbyTriplets
+    -List<Bumper> bumpers
+    -List<Inlane> inlanes
+    -List<Outlane> outlanes
+    -List<EnergyDrink> energyDrinks
+    +void Initialize()
+    +void HitKaboo(Kaboo kaboo)
+    +void HitGordow(Gordow gordow)
+    +void DefeatMummyBall()
+    +void ChangeKirbyTripletExpression(KirbyTriplet kirbyTriplet)
+    +void ActivateMaximTomato()
+    +void RemoveDrainStoppers()
+    +void HitBumper(Bumper bumper)
+    +void PassThroughInlane()
+    +void PassThroughOutlane()
+    +void CollectEnergyDrink(EnergyDrink energyDrink)
+}
+
+class Kaboo : GameObject {
+    +bool IsRetracted
+    +void Retract()
+    +void Extend()
+    +void Hit()
+}
+
+class Gordow : GameObject {
+    +void Hit()
+}
+
+class BigKaboo : Kaboo {
+    +void Disappear()
+}
+
+class MummyBall : GameObject {
+    +void Move()
+    +void Hit()
+}
+
+class KirbyTriplet : GameObject {
+    +bool IsAwake
+    +void WakeUp()
+    +void FallAsleep()
+}
+
+class Bumper : GameObject {
+    +void Hit()
+}
+
+class Inlane : GameObject {
+    +void PassThrough()
+}
+
+class Outlane : GameObject {
+    +void PassThrough()
+}
+
+class EnergyDrink : GameObject {
+    +void Collect()
+}
+
+GameObject <|-- Flipper
+GameObject <|-- Kaboo
+GameObject <|-- Gordow
+GameObject <|-- MummyBall
+GameObject <|-- KirbyTriplet
+GameObject <|-- Bumper
+GameObject <|-- Inlane
+GameObject <|-- Outlane
+GameObject <|-- EnergyDrink
+
+LowerBoard *-- Kaboo
+LowerBoard *-- Gordow
+LowerBoard *-- BigKaboo
+LowerBoard *-- MummyBall
+LowerBoard *-- KirbyTriplet
+LowerBoard *-- Bumper
+LowerBoard *-- Inlane
+LowerBoard *-- Outlane
+LowerBoard *-- EnergyDrink
+
+@enduml

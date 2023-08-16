@@ -1,0 +1,55 @@
+@startuml
+skinparam packageStyle rectangle
+
+package "Wispy-Woods Land" {
+  [Lower Board]
+  
+  package "GameObject: Kaboo" {
+    [Kaboo 1]
+    [Kaboo 2]
+    [Kaboo 3]
+    [Kaboo 4]
+    [Kaboo 5]
+    [Kaboo 6]
+  }
+  
+  package "GameObject: Gordow" {
+    [Gordow 1]
+    [Gordow 2]
+  }
+  
+  [Big Kaboo]
+  [Mummy Ball]
+  
+  package "GameObject: Kirby Triplet" {
+    [Kirby Triplet 1]
+    [Kirby Triplet 2]
+    [Kirby Triplet 3]
+  }
+  
+  [Maxim Tomato]
+  [Star-Shaped Launcher]
+  
+  [Bumper]
+  [Drain Stoppers]
+}
+
+[Lower Board] --> [Kaboo 1]
+[Lower Board] --> [Kaboo 2]
+[Lower Board] --> [Kaboo 3]
+[Lower Board] --> [Kaboo 4]
+[Lower Board] --> [Kaboo 5]
+[Lower Board] --> [Kaboo 6]
+[Lower Board] --> [Gordow 1]
+[Lower Board] --> [Gordow 2]
+[Lower Board] --> [Big Kaboo]
+[Lower Board] --> [Mummy Ball]
+[Lower Board] --> [Kirby Triplet 1]
+[Lower Board] --> [Kirby Triplet 2]
+[Lower Board] --> [Kirby Triplet 3]
+[Lower Board] --> [Maxim Tomato]
+[Lower Board] --> [Star-Shaped Launcher]
+[Lower Board] --> [Bumper]
+[Lower Board] --> [Drain Stoppers]
+
+@enduml

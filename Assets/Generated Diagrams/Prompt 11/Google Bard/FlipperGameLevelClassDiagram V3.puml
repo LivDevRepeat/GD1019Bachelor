@@ -1,0 +1,44 @@
+
+object "Big Kaboo" as b {
+    points: 480
+}
+
+object "Gordow" as g {
+    points: 240
+}
+
+object "Mummy Ball" as m {
+    points: 360 (+M when defeated)
+}
+
+object "Peripheral Kaboo" as p {
+    points: 240 (first hit), 180 (while retracted)
+}
+
+object "Bumper" as bm {
+    points: 50
+}
+
+object "Inlane" as il {
+    points: 10
+}
+
+object "Outlane" as ol {
+    points: 200
+}
+
+object "Energy Drink" as ed {
+    points: 100
+}
+
+b -down-> g
+b -down-> m
+b -right-> p: 6
+
+p -right-> bm
+
+il -right-> ol
+
+m -left-> ed
+
+@enduml

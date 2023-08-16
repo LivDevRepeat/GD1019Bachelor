@@ -1,0 +1,52 @@
+@startuml
+class LowerBoard {
+  + Kaboo[6] kaboos
+  + Gordow[2] gordows
+  + BigKaboo bigKaboo
+  + MummyBall mummyBall
+  + KirbyTriplet[3] kirbyTriplets
+}
+
+class Kaboo {
+  + pointsPerHit 480
+}
+
+class Gordow {
+  + pointsPerHit 240
+}
+
+class BigKaboo {
+  + pointsPerHit 480
+}
+
+class MummyBall {
+  + pointsPerHit 360
+  + pointsPerHitWhenDefeated M
+}
+
+class KirbyTriplet {
+  + expression
+}
+
+class Bumper {
+  + pointsPerHit 50
+}
+
+class Inlane {
+  + points 10
+}
+
+class Outlane {
+  + points 200
+}
+
+class EnergyDrink {
+  + points 100
+}
+
+LowerBoard *-- Kaboo
+LowerBoard *-- Gordow
+LowerBoard *-- BigKaboo
+LowerBoard *-- MummyBall
+LowerBoard *-- KirbyTriplet
+@enduml

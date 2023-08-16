@@ -1,0 +1,54 @@
+@startuml
+skinparam classBackgroundColor white
+skinparam classPadding 10
+
+class LowerBoard {
+  - Kaboos: List<Kaboo>
+  - Gordows: List<Gordow>
+  - BigKaboo: Kaboo
+  - MummyBall: MummyBall
+  - KirbyTriplets: List<KirbyTriplet>
+  - score: int
+
+  + hitMummyBall(): void
+  + passOverKirbyTriplet(): void
+  + hitPeripheralKaboo(): void
+  + getScore(): int
+}
+
+class Kaboo {
+  - position: Vector2
+  - isRetracted: boolean
+
+  + hit(): void
+}
+
+class Gordow {
+  - position: Vector2
+
+  + hit(): void
+}
+
+class MummyBall {
+  - position: Vector2
+  - health: int
+
+  + hit(): void
+  + defeat(): void
+}
+
+class KirbyTriplet {
+  - position: Vector2
+  - expression: int
+
+  + passOver(): void
+}
+
+LowerBoard "1" *-- "6" Kaboo
+LowerBoard "2" *-- "2" Gordow
+LowerBoard "1" o-- MummyBall
+LowerBoard "3" *-- "3" KirbyTriplet
+
+Kaboo "1" -down-> MummyBall
+@enduml
+

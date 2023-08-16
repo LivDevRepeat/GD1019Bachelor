@@ -1,0 +1,68 @@
+    @startuml
+    
+    class WispyWoodsLand {
+      +LowerBoard: Board
+    }
+    
+    class Board {
+      +Shape: Rounded
+      +Features: List<GameObject>
+      +ScoringSystem: Dictionary<String, int>
+      +Actions: List<Action>
+    }
+    
+    class GameObject {
+      +Name: String
+      +Position: Vector2
+      +Points: int
+    }
+    
+    class Action {
+      +Description: String
+      +Effect: Function
+    }
+    
+    class KirbyTriplet {
+      +ChangeExpression()
+      +WakeUp(): MaximTomato
+      +FullyDown(): RemoveDrainStoppers
+    }
+    
+    class MaximTomato extends GameObject {}
+    class RemoveDrainStoppers {}
+    
+    class Kaboo extends GameObject {
+      +Retract()
+      +DisappearanceEffect(): StarLauncher
+    }
+    
+    class BigKaboo extends Kaboo {
+      +HitPoints: 480
+    }
+    
+    class Gordow extends GameObject {
+      +HitPoints: 240
+    }
+    
+    class MummyBall extends GameObject {
+      +HitPoints: 360
+      +Hit(): Effect
+      +Defeat(): WarpStar
+    }
+    
+    class WarpStar {}
+    class StarLauncher {
+      +Launch(Direction)
+    }
+    
+    WispyWoodsLand --> Board
+    Board --> GameObject: contains *
+    Board --> Action: allows *
+    
+    GameObject <|-- KirbyTriplet
+    GameObject <|-- MaximTomato
+    GameObject <|-- Gordow
+    GameObject <|-- BigKaboo
+    GameObject <|-- MummyBall
+    
+    @enduml

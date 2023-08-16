@@ -1,0 +1,64 @@
+@startuml
+
+class Board {
+  +Shape: Rounded
+}
+
+class Kaboo {
+  +Number: 6
+  +Position: Corners
+}
+
+class Gordow {
+  +Number: 2
+}
+
+class BigKaboo {
+  +Position: Center
+  +State: Visible/Hidden
+}
+
+class MummyBall {
+  +State: Hovering
+  +HitCount: 0..8
+}
+
+class KirbyTriplet {
+  +Expression: Asleep/Wakeful/FullyDown
+}
+
+class WarpStar {
+  +State: Visible/Hidden
+}
+
+class MaximTomato {
+  +State: Visible/Hidden
+}
+
+class StarLauncher {
+  +Directions: 5
+  +State: Visible/Hidden
+}
+
+class Scoring {
+  +BigKaboo: 480
+  +Gordow: 240
+  +MummyBall: 360 (+M)
+  +PeripheralKaboo: 240 (First), 180 (Subsequent)
+  +Bumper: 50
+  +Inlane: 10
+  +Outlane: 200
+  +EnergyDrink: 100
+}
+
+Board -- Kaboo : contains
+Board -- Gordow : contains
+Board -- BigKaboo : contains
+Board -- MummyBall : contains
+Board -- KirbyTriplet : contains 3x
+MummyBall -- WarpStar : summons >
+Kaboo -- StarLauncher : reveals >
+KirbyTriplet -- MaximTomato : summons >
+Board -- Scoring : uses
+
+@enduml

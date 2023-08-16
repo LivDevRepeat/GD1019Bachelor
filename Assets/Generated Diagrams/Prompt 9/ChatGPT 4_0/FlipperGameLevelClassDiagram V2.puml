@@ -1,0 +1,94 @@
+@startuml
+
+class GameObject {
+  + Start(): void
+  + Update(): void
+}
+
+class InteractiveObject <<abstract>> {
+  + points: int
+  + Hit(): void
+}
+
+class Kaboo <<abstract>> {
+  + isRetracted: bool
+}
+
+class PeripheralKaboo extends Kaboo, InteractiveObject {
+  + FirstHitPoints: 240
+  + RetractedHitPoints: 180
+  + Hit(): void override
+}
+
+class BigKaboo extends Kaboo, InteractiveObject {
+  + HitPoints: 480
+  + Hit(): void override
+}
+
+class Gordow extends InteractiveObject {
+  + HitPoints: 240
+}
+
+class MummyBall extends InteractiveObject {
+  + hitsCount: int
+  + DefeatPoints: int
+  + Hit(): void override
+}
+
+class KirbyTriplet {
+  + state: ExpressionState
+  + ChangeExpression(): void
+}
+
+class WarpStar {
+  + Call(): void
+}
+
+class Bumper extends InteractiveObject {
+  + HitPoints: 50
+}
+
+class PassLane <<abstract>> {
+  + Traverse(): void
+}
+
+class Inlane extends PassLane {
+  + Points: 10
+}
+
+class Outlane extends PassLane {
+  + Points: 200
+}
+
+class EnergyDrink extends InteractiveObject {
+  + Points: 100
+}
+
+class MaximTomato {
+  + Appear(): void
+}
+
+class DrainStopper {
+  + Remove(): void
+}
+
+class StarLauncher {
+  + LaunchDirection: Direction
+  + Launch(): void
+}
+
+enum ExpressionState {
+  SLEEP,
+  WAKE,
+  DOWN
+}
+
+enum Direction {
+  UP,
+  DOWN,
+  LEFT,
+  RIGHT,
+  CENTER
+}
+
+@enduml

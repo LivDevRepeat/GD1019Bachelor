@@ -1,0 +1,83 @@
+@startuml
+
+class MonoBehavior {
+    +Awake()
+    +Start()
+    +Update()
+    +FixedUpdate()
+    +LateUpdate()
+}
+
+class BoardElement {
+    +OnHit()
+    +OnCollisionEnter()
+    +OnCollisionExit()
+}
+
+class Flipper {
+    +Rotate()
+}
+
+class Kaboo extends BoardElement {
+    +Retract()
+}
+
+class Gordow extends BoardElement {
+}
+
+class BigKaboo extends Kaboo {
+    -isHidden: bool
+    +Show()
+    +Hide()
+}
+
+class MummyBall extends BoardElement {
+    +Defeat()
+}
+
+class KirbyTriplet extends BoardElement {
+    -isAwake: bool
+    +WakeUp()
+    +FallAsleep()
+}
+
+class WarpStar extends BoardElement {
+    +Teleport()
+}
+
+class MaximTomato extends BoardElement {
+}
+
+class Bumper extends BoardElement {
+}
+
+class Inlane extends BoardElement {
+}
+
+class Outlane extends BoardElement {
+}
+
+class EnergyDrink extends BoardElement {
+}
+
+class StarShapedLauncher extends BoardElement {
+    +LaunchDirection(direction)
+}
+
+MonoBehavior <|-- BoardElement
+BoardElement <|-- Kaboo
+BoardElement <|-- Gordow
+BoardElement <|-- MummyBall
+BoardElement <|-- KirbyTriplet
+BoardElement <|-- WarpStar
+BoardElement <|-- MaximTomato
+BoardElement <|-- Bumper
+BoardElement <|-- Inlane
+BoardElement <|-- Outlane
+BoardElement <|-- EnergyDrink
+BoardElement <|-- StarShapedLauncher
+BoardElement <|-- Flipper
+
+Kaboo <|-- BigKaboo
+
+@enduml
