@@ -1,94 +1,130 @@
 @startuml
+package LowerBoard  {
+    
+    class Kaboo  {
+        - hitPoints: 360
+        - retractedHitPoints: 180
+        + isRetracted: bool
+        - Hit(): void
+    }
+    
+    class BigKaboo{
+      - hitPoints: 480
+      + isRetracted: bool
+      - Hit(): void
+      - Retract(): void 
+      + AllKaboosRetracted(Kaboo): void
+    }
+    
+    class Gordow {
+      - hitPoints: 240
+      - Hit(): void
+    }
+    
+    class MummyBall{
+      - hitsCount: 0
+      - hitPoints: 360
+      - defeatPoints: 8
+      - Hit(): void 
+      + Defeat(): void
+    }
+    
+    class KirbySprite {
+      + state: ExpressionState
+      + ChangeExpression(): void
+    }
+    
+    class WarpStar {
+      + isActive: bool
+      + Call(): void
+      + Warp(): void
+    }
+    
+    class Bumper {
+      - hitPoints: 50
+      - Hit(): void
+    }
+    
+    class Inlane {
+      - hitPoints: 10
+      - Traverse(): void
+    }
+    
+    class Outlane {
+      - hitPoints: 200
+      - Traverse(): void
+    }
+    
+    class EnergyDrink {
+      - hitPoints: 100
+      - Hit(): void
+      + Appear(): void
+      + Remove(): void
+    }
+    
+    class MaximTomato {
+      + Appear(): void
+      + Remove(): void
+    }
+    
+    class StarLauncher {
+      - isActive: bool
+      + LaunchDirection: Direction
+      + Launch(): void
+    }
+    
+    enum ExpressionState {
+      SLEEP,
+      WAKE,
+      DOWN
+    }
+    
+    enum Direction {
+      UP,
+      DOWN,
+      LEFT,
+      RIGHT,
+      CENTER
+    }
+    
+    entity "Lower Board" as LowerBoard {
+      + Kaboo 
+      + BigKaboo
+      + Gordow
+      + MummyBall
+      + KirbySprite
+      + WarpStar
+      + Bumper
+      + Inlane
+      + Outlane
+      + EnergyDrink
+      + MaximTomato
+      + DrainStopper
+      + StarLauncher
+    }
 
-class GameObject {
-  + Start(): void
-  + Update(): void
-}
-
-class InteractiveObject <<abstract>> {
-  + points: int
-  + Hit(): void
-}
-
-class Kaboo <<abstract>> {
-  + isRetracted: bool
-}
-
-class PeripheralKaboo extends Kaboo, InteractiveObject {
-  + FirstHitPoints: 240
-  + RetractedHitPoints: 180
-  + Hit(): void override
-}
-
-class BigKaboo extends Kaboo, InteractiveObject {
-  + HitPoints: 480
-  + Hit(): void override
-}
-
-class Gordow extends InteractiveObject {
-  + HitPoints: 240
-}
-
-class MummyBall extends InteractiveObject {
-  + hitsCount: int
-  + DefeatPoints: int
-  + Hit(): void override
-}
-
-class KirbyTriplet {
-  + state: ExpressionState
-  + ChangeExpression(): void
-}
-
-class WarpStar {
-  + Call(): void
-}
-
-class Bumper extends InteractiveObject {
-  + HitPoints: 50
-}
-
-class PassLane <<abstract>> {
-  + Traverse(): void
-}
-
-class Inlane extends PassLane {
-  + Points: 10
-}
-
-class Outlane extends PassLane {
-  + Points: 200
-}
-
-class EnergyDrink extends InteractiveObject {
-  + Points: 100
-}
-
-class MaximTomato {
-  + Appear(): void
-}
-
-class DrainStopper {
-  + Remove(): void
-}
-
-class StarLauncher {
-  + LaunchDirection: Direction
-  + Launch(): void
-}
-
-enum ExpressionState {
-  SLEEP,
-  WAKE,
-  DOWN
-}
-
-enum Direction {
-  UP,
-  DOWN,
-  LEFT,
-  RIGHT,
-  CENTER
-}
-
+    LowerBoard *-- Kaboo :  6 
+    LowerBoard *-- BigKaboo :  1
+    LowerBoard *-- Gordow : 5
+    LowerBoard *-- MummyBall :  1
+    LowerBoard *-- KirbySprite :  3
+    LowerBoard *-- WarpStar :  1
+    LowerBoard *-- Bumper :  2
+    LowerBoard *-- Inlane :  2
+    LowerBoard *-- Outlane :  2
+    
+    Kaboo--> BigKaboo:  <<modiefies>>
+    BigKaboo --> StarLauncher:  <<modifies>>
+    MummyBall --> WarpStar : <<calls>>
+ 
+    KirbySprite --> MaximTomato
+    KirbySprite --> EnergyDrink
+    
+     Inlane -> EnergyDrink : <<calls>>
+    
+    note top of KirbySprite : "Depending on the\nstate of the\nother KirbySprites,\nthe MaximTomato\nor DrainStopper\nwill be called\nwhen the\nKirbySprite\nchanges\nexpression."
+    
+    
+    
+    }
 @enduml
