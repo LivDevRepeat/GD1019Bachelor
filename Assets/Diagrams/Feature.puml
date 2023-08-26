@@ -54,14 +54,14 @@ package LowerBoard  {
       - Traverse(): void
     }
     
-    class EnergyDrink {
+    class EnergyDrink << DrainStopper >> {
       - hitPoints: 100
       - Hit(): void
       + Appear(): void
       + Remove(): void
     }
     
-    class MaximTomato {
+    class MaximTomato << DrainStopper >> {
       + Appear(): void
       + Remove(): void
     }
@@ -79,11 +79,11 @@ package LowerBoard  {
     }
     
     enum Direction {
-      UP,
-      DOWN,
-      LEFT,
-      RIGHT,
-      CENTER
+      UP
+      UP_RIGHT
+      DOWN_RIGHT
+      DOWN_LEFT
+      UP_LEFT
     }
     
     entity "Lower Board" as LowerBoard {
@@ -119,7 +119,7 @@ package LowerBoard  {
     KirbySprite --> MaximTomato
     KirbySprite --> EnergyDrink
     
-     Inlane -> EnergyDrink : <<calls>>
+    Inlane -> EnergyDrink : <<calls>>
     
     note top of KirbySprite : "Depending on the\nstate of the\nother KirbySprites,\nthe MaximTomato\nor DrainStopper\nwill be called\nwhen the\nKirbySprite\nchanges\nexpression."
     

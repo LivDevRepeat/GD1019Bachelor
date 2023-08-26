@@ -102,11 +102,6 @@ package "Lower Board"  {
       - ChangeState(): void
     }
     
-
-
-    
-    
-    
     enum ExpressionState {
       SLEEP,
       WAKE,
