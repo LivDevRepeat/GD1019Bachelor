@@ -6,6 +6,16 @@
   <component name="ChangeListManager">
     <list default="true" id="a8bc823b-59ac-4f8d-b54c-40af130c2292" name="Changes" comment="[AI] [ChatGPT 3.5] Generated ULM Out of GDD with very Short Prompt">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GD1019Bachelor/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GD1019Bachelor/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Pixel Army/Scenes/Demo_1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Free Pixel Army/Scenes/Demo_1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Pixel Army/Sprites/Humans/General/Animation/General_0.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Free Pixel Army/Sprites/Humans/General/Animation/General_0.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Pixel Army/Sprites/Humans/General/PALLET.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Free Pixel Army/Sprites/Humans/General/PALLET.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Pixel Army/Sprites/Humans/General/WalkGeneralAnim.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Free Pixel Army/Sprites/Humans/General/WalkGeneralAnim.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Pixel Army/Sprites/Humans/Helmet/Animation/Helmet.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Free Pixel Army/Sprites/Humans/Helmet/Animation/Helmet.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Pixel Army/Sprites/Humans/Helmet/Animation/Walk.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Free Pixel Army/Sprites/Humans/Helmet/Animation/Walk.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Pixel Army/Sprites/Humans/Helmet/Animation/Yawn.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Free Pixel Army/Sprites/Humans/Helmet/Animation/Yawn.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Free Pixel Army/Sprites/Humans/Helmet/WalkHelmetAnim.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Free Pixel Army/Sprites/Humans/Helmet/WalkHelmetAnim.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,29 +47,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultPlantUmlFileTemplate": "UML Class",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "61-shader",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultPlantUmlFileTemplate&quot;: &quot;UML Class&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;61-shader&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "/Users/Lina_Privat/Library/Application Support/JetBrains/Rider2023.1/resharper-host/DecompilerCache",
-      "/Users/Lina_Privat/Library/Application Support/JetBrains/Rider2023.1/resharper-host/SourcesCache",
-      "/Users/Lina_Privat/.local/share/Symbols/src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;/Users/Lina_Privat/Library/Application Support/JetBrains/Rider2023.1/resharper-host/DecompilerCache&quot;,
+      &quot;/Users/Lina_Privat/Library/Application Support/JetBrains/Rider2023.1/resharper-host/SourcesCache&quot;,
+      &quot;/Users/Lina_Privat/.local/share/Symbols/src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="/Applications/Unity/Hub/Editor/2022.3.4f1/Unity.app/Contents/MacOS/Unity" />
@@ -124,7 +134,8 @@
       <workItem from="1692090777531" duration="71000" />
       <workItem from="1692109367110" duration="57000" />
       <workItem from="1692110897875" duration="8872000" />
-      <workItem from="1693050395036" duration="2246000" />
+      <workItem from="1693050395036" duration="3721000" />
+      <workItem from="1693137683520" duration="9643000" />
     </task>
     <task id="LOCAL-00001" summary="[Manual Fix]">
       <option name="closed" value="true" />
