@@ -5,20 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a8bc823b-59ac-4f8d-b54c-40af130c2292" name="Changes" comment="[AI] [ChatGPT 3.5] Generated ULM Out of GDD with very Short Prompt">
-      <change afterPath="$PROJECT_DIR$/Assets/Generated Diagrams/Decorator Experiment.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Generated Diagrams/Decorator Experiment.puml.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Generated Diagrams/Prompt 11/ChatGPT 3_5.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Generated Diagrams/Prompt 11/ChatGPT 3_5/FlipperGameLevelClassDiagram V1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Generated Diagrams/Prompt 11/ChatGPT 3_5/FlipperGameLevelClassDiagram V2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Generated Diagrams/Prompt 11/ChatGPT 3_5/FlipperGameLevelClassDiagram V3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Generated Diagrams/Prompt 11/ChatGPT 4_0.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Generated Diagrams/Prompt 11/ChatGPT 4_0/FlipperGameLevelClassDiagram V1.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Generated Diagrams/Prompt 11/ChatGPT 4_0/FlipperGameLevelClassDiagram V1.puml.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Generated Diagrams/Prompt 11/ChatGPT 4_0/FlipperGameLevelClassDiagram V2.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Generated Diagrams/Prompt 11/ChatGPT 4_0/FlipperGameLevelClassDiagram V2.puml.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Generated Diagrams/Prompt 11/ChatGPT 4_0/FlipperGameLevelClassDiagram V3.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Generated Diagrams/Prompt 11/ChatGPT 4_0/FlipperGameLevelClassDiagram V3.puml.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GD1019Bachelor/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GD1019Bachelor/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scene Templates/Pinball Base.scenetemplate" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scene Templates/Pinball Base.scenetemplate" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/ChatGPT 3_5/Pinball_Entry 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/ChatGPT 3_5/Pinball_Entry 1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/ChatGPT 3_5/Pinball_Entry 2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/ChatGPT 3_5/Pinball_Entry 2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/ChatGPT 4_0/Pinball_Entry 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/ChatGPT 4_0/Pinball_Entry 1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/ChatGPT 4_0/Pinball_Entry 2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/ChatGPT 4_0/Pinball_Entry 2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/ChatGPT 4_0/Pinball_Entry 3.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/ChatGPT 4_0/Pinball_Entry 3.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Google Bard/Pinball_Entry 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Google Bard/Pinball_Entry 1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Google Bard/Pinball_Entry 2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Google Bard/Pinball_Entry 2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Google Bard/Pinball_Entry 3.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Google Bard/Pinball_Entry 3.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Pinball Base.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Pinball Base.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +54,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "58-generated-ulm-diagrams",
+    "git-widget-placeholder": "62--Cycle-through-Scenes",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -137,6 +135,7 @@
       <workItem from="1692090777531" duration="71000" />
       <workItem from="1692109367110" duration="57000" />
       <workItem from="1692110897875" duration="8872000" />
+      <workItem from="1694116023985" duration="1239000" />
     </task>
     <task id="LOCAL-00001" summary="[Manual Fix]">
       <option name="closed" value="true" />
