@@ -12,7 +12,9 @@ AI in Gamedevelopment
   
 ### Statistics
 -  35 Commits Found with the tag [AI]
-   - 16 With [ChatGPT 3.5]
+   - 7 with [ChatGPT 3.5]
+   - 7 with [Google Bard]
+   - 16 with [ChatGPT 4.0]
 
 -   13 with [Manual Fix]
-- 
+
