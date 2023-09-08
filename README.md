@@ -7,3 +7,6 @@ AI in Gamedevelopment
 [AI][ChatGPT 3.5]  
 - if Generative Ai was used to create the code
 - second braket specifies the Used technologie
+
+
+This Repository is Locked As of the 8th of September 2023.
